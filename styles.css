@@ -12,6 +12,10 @@ body {
   justify-content: space-between;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .wifi-net-battery {
   padding-top: 12px;
 }
@@ -74,7 +78,6 @@ li {
 }
 
 h1.about-title {
-  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -146,6 +149,7 @@ button:disabled {
   display: none;
   visibility: hidden;
 }
+
 
 .middle-section {
   display: flex;
@@ -347,6 +351,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 
 @media only screen and (max-width: 768px) {
