@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-body {
+.content {
   font-family: 'Poppins', sans-serif;
   background-color: #f7f7f9;
 }
@@ -52,6 +52,10 @@ body {
 
 li {
   list-style: none;
+}
+
+.project-links li {
+  margin-right: 1rem;
 }
 
 .nav-links ul li {
@@ -183,10 +187,6 @@ ul.project-links {
   margin-top: 0.5rem;
 }
 
-.project-links li {
-  margin-right: 1rem;
-}
-
 .small-circle {
   width: 0.5rem;
   height: 0.5rem;
@@ -212,7 +212,8 @@ ul.project-links {
   margin-left: -2.2rem;
 }
 
-.career-role, .year {
+.career-role,
+.year {
   font-style: normal;
   font-weight: 600;
   font-size: 0.8rem;
@@ -275,7 +276,7 @@ a.see-project-btn {
   height: 100vh;
 }
 
-.languages{
+.languages {
   width: 100%;
   margin: 0.5rem auto;
   background-color: #fff;
@@ -297,20 +298,24 @@ a.see-project-btn {
   justify-content: space-between;
 }
 
-.js-img img, .html-img img, .css-img img  {
+.js-img img,
+.html-img img,
+.css-img img {
   margin-top: 1rem;
   width: 96%;
   border-radius: 0.5rem;
   margin-left: -1.4rem;
 }
 
-.frameworks, .skills {
+.frameworks,
+.skills {
   background-color: #fff;
   display: flex;
   flex-direction: column;
 }
 
-.framework-btn, .skill-btn {
+.framework-btn,
+.skill-btn {
   display: flex;
   justify-content: space-between;
   padding-right: 2rem;
@@ -332,7 +337,6 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .contact-me-title {
@@ -381,6 +385,6 @@ hr {
   }
 
   .project-title {
-      width: 60%;
-    }
+    width: 60%;
+  }
 }
