@@ -100,13 +100,7 @@ This project is built with HTML & CSS to showcase my html and css skills..
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://github.com/rosemutai/My-Portfolio)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -196,13 +190,6 @@ If you like this project please follow me on github & twitter and also connect o
 <!-- ACKNOWLEDGEMENTS -->
 ## :pray: Acknowledgments <a name="acknowledgements"></a>
 I would like to thank Microverse for this exercise.
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!-- FAQ (optional) -->
-## :question: FAQ (OPTIONAL) <a name="faq"></a><br/>
-- **[Question_1]**<br/>
-  - [Answer_1]<br/>
-- **[Question_2]**<br/>
-  - [Answer_2]
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- LICENSE -->
 
