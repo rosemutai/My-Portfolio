@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 24px;
+}
+
+.bottom-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wifi-net-battery {
+  padding-top: 12px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #6070FF;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 24px;
+}
+
+.bars {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 24px;
+  top: calc(87% - 40px/2);
+
+}
+
+.bar {
+  width: 18px;
+  color: #ACB7C3;
+  border: 2px solid #6070FF;
+  margin-bottom: 3px;
+  border-radius: 8px;
+}
+
+.hero-section {
+  width: 100%;
+  background-image: url("images/header-shapes-mobile.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  
+}
+
+h2.about-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172B4D; 
+}
+
+.padding {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.about-me {
+  font-family: 'Poppins', sans-serif;
+  color: #344563;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  
+}
+
+a.connect-link {
+  text-decoration: none;
+  
+  /* background: #000; */
+}
+
+.icons {
+  margin-top: 6px;
+  padding-left: 24px;
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.icon {
+  color: #505F79;
+}
+
+button {
+  background: #FFFFFF;
+  border: 1px solid #7F8CFF;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 16px;
+  color: #7F8CFF;
+  font-style: normal;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: transparent;
+}
+
+button:hover {
+  color: #FFFFFF;
+  background: #6070FF;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+}
+
+button:active {
+  background: #2230D2;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+
+button:disabled {
+  background-color: #E5E5E5;
+  color: #5E6C84;
+}
+
+@media only screen and (max-width: 768px) {
+  h2.about-title {
+    width: 50%;
+  }
+
+  .about-me {
+    width: 90%;
+  }
+}
