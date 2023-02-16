@@ -63,7 +63,7 @@ h2.about-title {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #172b4d; 
+  color: #172b4d;
 }
 
 .padding {
@@ -92,17 +92,17 @@ a.connect-link {
 }
 
 .icon {
-  color: #505F79;
+  color: #505f79;
 }
 
 button {
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   line-height: 24px;
   font-size: 16px;
-  color: #7f8Cff;
+  color: #7f8cff;
   font-style: normal;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -110,7 +110,7 @@ button {
 }
 
 button:hover {
-  color: #ffffff;
+  color: #fff;
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
@@ -119,7 +119,7 @@ button:hover {
 button:active {
   background: #2230d2;
   border-radius: 8px;
-  color: #ffffff;
+  color: #fff;
 }
 
 button:disabled {
