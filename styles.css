@@ -1,20 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .header {
-  justify-content: space-between;
   width: 100%;
   position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-.top-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 8px 24px;
-}
-
-.bottom-header {
   display: flex;
   justify-content: space-between;
 }
@@ -23,7 +11,14 @@
   padding-top: 12px;
 }
 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .logo {
+  padding-top: 12px;
+  text-decoration: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -34,6 +29,7 @@
 }
 
 .bars {
+  padding-top: 8px;
   position: absolute;
   width: 40px;
   height: 40px;
@@ -48,17 +44,30 @@
   margin-bottom: 3px;
   border-radius: 8px;
 }
+li {
+  list-style: none;
+}
+
+.nav ul li{
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px
+}
 
 .hero-section {
   width: 100%;
   background-image: url("images/header-shapes-mobile.svg");
   background-repeat: no-repeat;
+  background-size: 100%;
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
-h2.about-title {
+h1.about-title {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -127,8 +136,35 @@ button:disabled {
   color: #5e6c84;
 }
 
+.nav {
+  display: none;
+  visibility: hidden;
+}
+
 @media only screen and (max-width: 768px) {
-  h2.about-title {
+  .nav {
+    width: 100%;
+    background-color: #6070ff;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .close-nav-icon {
+    position: relative;
+  }
+
+  .close-icon {
+    position: absolute !important;
+    top: 4px;
+    right: 4px;
+  }
+
+  h1.about-title {
     width: 50%;
   }
 
