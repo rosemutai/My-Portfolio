@@ -173,22 +173,22 @@ git@github.com:rosemutai/My-Portfolio.git
 - LinkedIn: [Rose Mutai](https://www.linkedin.com/in/rosemutai/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- FUTURE FEATURES -->
-## :telescope: Future Features <a name="future-features"></a><br/>
+### Key Features <a name="key-features"></a>
 - [ ] **making the porfolio responsive**<br/>
 - [ ] **Adding Animation**<br/>
 - [ ] **Making it dynamic**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- CONTRIBUTING -->
-## :handshake: Contributing <a name="contributing"></a>
+## 🤝 Contributing <a name="contributing"></a>
 Contributions, issues, and feature requests are welcome!<br/>
 Feel free to check the [https://github.com/rosemutai/My-Portfolio/issues.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- SUPPORT -->
-## :star:️ Show your support <a name="support"></a>
+## ⭐️ Show your support <a name="support"></a>
 If you like this project please follow me on github & twitter and also connect on Linkedin.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- ACKNOWLEDGEMENTS -->
-## :pray: Acknowledgments <a name="acknowledgements"></a>
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 I would like to thank Microverse for this exercise.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- LICENSE -->
