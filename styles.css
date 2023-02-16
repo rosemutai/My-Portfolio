@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .header {
-  display: flex;
   justify-content: space-between;
   width: 100%;
   position: relative;
@@ -29,7 +28,7 @@
   font-size: 18px;
   line-height: 20px;
   text-align: center;
-  color: #6070FF;
+  color: #6070ff;
   font-family: 'Poppins', sans-serif;
   padding-left: 24px;
 }
@@ -39,14 +38,13 @@
   width: 40px;
   height: 40px;
   right: 24px;
-  top: calc(87% - 40px/2);
-
+  top: calc(87% - 40px / 2);
 }
 
 .bar {
   width: 18px;
-  color: #ACB7C3;
-  border: 2px solid #6070FF;
+  color: #acb7c3;
+  border: 2px solid #6070ff;
   margin-bottom: 3px;
   border-radius: 8px;
 }
@@ -58,7 +56,6 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  
 }
 
 h2.about-title {
@@ -66,7 +63,7 @@ h2.about-title {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #172B4D; 
+  color: #172b4d; 
 }
 
 .padding {
@@ -80,13 +77,10 @@ h2.about-title {
   line-height: 24px;
   font-size: 16px;
   font-weight: 400;
-  
 }
 
 a.connect-link {
   text-decoration: none;
-  
-  /* background: #000; */
 }
 
 .icons {
@@ -102,14 +96,13 @@ a.connect-link {
 }
 
 button {
-  background: #FFFFFF;
-  border: 1px solid #7F8CFF;
+  background: #ffffff;
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   line-height: 24px;
   font-size: 16px;
-  color: #7F8CFF;
+  color: #7f8Cff;
   font-style: normal;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -117,21 +110,21 @@ button {
 }
 
 button:hover {
-  color: #FFFFFF;
-  background: #6070FF;
+  color: #ffffff;
+  background: #6070ff;
   box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
 }
 
 button:active {
-  background: #2230D2;
+  background: #2230d2;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 button:disabled {
-  background-color: #E5E5E5;
-  color: #5E6C84;
+  background-color: #e5e5e5;
+  color: #5e6c84;
 }
 
 @media only screen and (max-width: 768px) {
