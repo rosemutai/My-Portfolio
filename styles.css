@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body-content {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f9;
+}
+
 .header {
   width: 100%;
   position: relative;
@@ -53,6 +64,10 @@ li {
   list-style: none;
 }
 
+.project-links li {
+  margin-right: 0.75rem;
+}
+
 .nav-links ul li {
   list-style: none;
   font-family: 'Poppins', sans-serif;
@@ -90,10 +105,18 @@ h1.about-title {
   line-height: 24px;
   font-size: 16px;
   font-weight: 400;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
-a.connect-link {
-  text-decoration: none;
+h4.connect-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #7f8cff;
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .icons {
@@ -145,12 +168,6 @@ button:disabled {
   visibility: hidden;
 }
 
-.card {
-  width: 90%;
-  margin: 1rem auto;
-  border-radius: 0.5rem;
-}
-
 .card img {
   width: 100%;
 }
@@ -163,23 +180,238 @@ button:disabled {
   line-height: 2.5rem;
 }
 
-.project-links {
-  display: flex;
-}
-
 .canopy {
-  color: #344563;
   font-style: normal;
   font-weight: 600;
-  font-size: 1rem;
-  line-height: 1rem;
+  font-size: 0.8rem;
+  color: #344563;
 }
 
 .small-circle {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  color: #c1c7d0;
+  background-color: #c1c7d0;
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: 1 90%;
+}
+
+.card {
+  width: 90%;
+  height: 36rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+  border: 1px solid #dfe1e6;
+  background-color: #fff;
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.project-image img {
+  width: 100%;
+}
+
+ul.project-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-top: 1.25rem;
+  list-style-type: none;
+}
+
+.project-title {
+  color: #172b4d;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.career-role,
+.year {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: #7a869a;
+}
+
+.project-description p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  color: #344563;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.my-skills {
+  display: flex;
+  text-align: center;
+  padding-top: 0.5rem;
+  align-items: center;
+}
+
+.skill-link {
+  margin-right: 1rem;
+  text-decoration: none;
+  padding: 8px;
+  color: #6070ff;
+  background-color: #ebebff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.03em;
+  border-radius: 0.5rem;
+}
+
+a.see-project-btn {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: #396df2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: #fff;
+  border: 1px solid #396df2;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.see-project-btn:hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+.see-project-btn:active {
+  background-color: #2230d2;
+  color: white;
+}
+
+.see-project-btn:disabled {
+  background-color: #e5e5e5;
+  color: #5e6c84;
+}
+
+.about-rose {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-left: 1rem;
+  padding-top: 4rem;
+  margin-top: 2rem;
+  border-top-right-radius: 6rem;
+}
+
+.languages {
+  width: 98%;
+  margin: 0.5rem auto;
+  background-color: #fff;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.languages-title {
+  color: #000;
+  font-style: normal;
+  font-weight: 500;
+  font-weight: bolder;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.card-language {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-framework {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow-img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.js-img img,
+.html-img img,
+.css-img img {
+  margin-top: 1rem;
+  width: 90%;
+  border-radius: 0.5rem;
+}
+
+.frameworks,
+.skills {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.framework-btn,
+.skill-btn {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2rem;
+  align-items: center;
+}
+
+hr {
+  margin: 1rem;
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.framework-list,
+.skill-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.footer {
+  width: 100%;
+  background-image: url('images/contact-form.svg"');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-me-title {
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 768px) {
@@ -206,10 +438,20 @@ button:disabled {
   }
 
   h1.about-title {
-    width: 50%;
+    width: 70%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .about-me {
     width: 90%;
+  }
+
+  .project-title {
+    width: 75%;
+  }
+
+  .see-project-btn {
+    width: 50%;
   }
 }
