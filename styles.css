@@ -191,7 +191,6 @@ button:disabled {
 .middle-section {
   display: flex;
   flex-direction: column;
-  
 }
 
 .works {
@@ -202,7 +201,6 @@ button:disabled {
 .card {
   width: 90%;
   height: 36rem;
-  background-color: red;
   margin: 1rem auto;
   display: flex;
   flex-direction: column;
@@ -290,12 +288,12 @@ a.see-project-btn {
 }
 
 .see-project-btn:hover {
-  background-color: #6070FF;
+  background-color: #6070ff;
   color: white;
 }
 
 .see-project-btn:active {
-  background-color: #2230D2;
+  background-color: #2230d2;
   color: white;
 }
 
@@ -326,7 +324,6 @@ a.see-project-btn {
 
 .languages-title {
   color: #000;
-  /* padding-left: 1rem; */
   font-style: normal;
   font-weight: 500;
   font-weight: bolder;
