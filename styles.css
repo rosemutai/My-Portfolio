@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .body-content {
   font-family: 'Poppins', sans-serif;
   background-color: #f7f7f9;
@@ -59,7 +65,7 @@ li {
 }
 
 .project-links li {
-  margin-right: 1rem;
+  margin-right: 0.75rem;
 }
 
 .nav-links ul li {
@@ -99,6 +105,8 @@ h1.about-title {
   line-height: 24px;
   font-size: 16px;
   font-weight: 400;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 a.connect-link {
@@ -166,43 +174,43 @@ button:disabled {
   line-height: 2.5rem;
 }
 
-.project-links {
-  display: flex;
-  list-style-type: none;
-  margin-left: 1rem;
-  margin-bottom: -0.5rem;
-  margin-top: 0.5rem;
-}
-
 .canopy {
   font-style: normal;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   color: #344563;
-  margin-left: -2.2rem;
 }
 
 .small-circle {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  color: #c1c7d0;
+  background-color: #c1c7d0;
 }
 
 .middle-section {
   display: flex;
   flex-direction: column;
+  
+}
+
+.works {
+  display: grid;
+  grid-template-columns: 1 90%;
 }
 
 .card {
   width: 90%;
+  height: 36rem;
+  background-color: red;
   margin: 1rem auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   border-radius: 1rem;
   border: 1px solid #dfe1e6;
   background-color: #fff;
-  padding-bottom: 1rem;
+  padding: 1rem 1rem 1.5rem 1rem;
 }
 
 .project-image img {
@@ -212,18 +220,16 @@ button:disabled {
 ul.project-links {
   list-style: none;
   display: flex;
-  width: 80%;
   align-items: center;
-  justify-content: flex-start;
+  padding-top: 1.25rem;
+  list-style-type: none;
 }
 
 .project-title {
   color: #172b4d;
   font-style: normal;
-  font-weight: bolder;
-  font-size: 2.4rem;
-  padding-left: 1rem;
-  margin-bottom: -0.5rem;
+  font-weight: 700;
+  font-size: 2rem;
   line-height: 2.4rem;
 }
 
@@ -239,17 +245,18 @@ ul.project-links {
 .project-description p {
   font-style: normal;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   line-height: 1.5rem;
   color: #344563;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .my-skills {
   display: flex;
-  padding-left: 1rem;
   text-align: center;
+  padding-top: 0.5rem;
+  align-items: center;
 }
 
 .skill-link {
@@ -257,7 +264,7 @@ ul.project-links {
   text-decoration: none;
   padding: 8px;
   color: #6070ff;
-  background-color: #e5e5e5;
+  background-color: #ebebff;
   font-style: normal;
   font-weight: 500;
   font-size: 0.75rem;
@@ -276,11 +283,25 @@ a.see-project-btn {
   letter-spacing: 0.03em;
   background: #fff;
   border: 1px solid #396df2;
-  padding: 1rem;
-  width: 40%;
-  border-radius: 1rem;
-  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
   margin-left: 1rem;
+}
+
+.see-project-btn:hover {
+  background-color: #6070FF;
+  color: white;
+}
+
+.see-project-btn:active {
+  background-color: #2230D2;
+  color: white;
+}
+
+.see-project-btn:disabled {
+  background-color: #e5e5e5;
+  color: #5e6c84;
 }
 
 .about-rose {
@@ -289,17 +310,23 @@ a.see-project-btn {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  padding-left: 1rem;
+  padding-top: 4rem;
+  margin-top: 2rem;
+  margin-bottom: -0.6rem;
+  border-top-right-radius: 6rem;
 }
 
 .languages {
-  width: 100%;
+  width: 98%;
   margin: 0.5rem auto;
   background-color: #fff;
+  padding-left: 1rem;
 }
 
 .languages-title {
   color: #000;
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
   font-style: normal;
   font-weight: 500;
   font-weight: bolder;
@@ -307,19 +334,36 @@ a.see-project-btn {
   line-height: 1.5rem;
 }
 
+/* .language {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+} */
+
 .card-language {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.card-framework {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.arrow-img {
+  width: 1rem;
+  height: 1rem;
+}
+
 .js-img img,
 .html-img img,
 .css-img img {
   margin-top: 1rem;
-  width: 96%;
+  width: 90%;
   border-radius: 0.5rem;
-  margin-left: -1.4rem;
+  
 }
 
 .frameworks,
@@ -342,6 +386,13 @@ hr {
   width: 90%;
   border: none;
   border-bottom: 1px solid #dfe1e6;
+}
+
+.framework-list,
+.skill-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
 .footer {
@@ -392,7 +443,9 @@ hr {
   }
 
   h1.about-title {
-    width: 50%;
+    width: 70%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .about-me {
@@ -400,6 +453,10 @@ hr {
   }
 
   .project-title {
-    width: 60%;
+    width: 75%;
+  }
+
+  .see-project-btn {
+    width: 50%;
   }
 }
