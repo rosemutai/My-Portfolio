@@ -109,8 +109,14 @@ h1.about-title {
   padding-bottom: 0.4rem;
 }
 
-a.connect-link {
-  text-decoration: none;
+h4.connect-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #7F8CFF;
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .icons {
@@ -311,7 +317,6 @@ a.see-project-btn {
   padding-left: 1rem;
   padding-top: 4rem;
   margin-top: 2rem;
-  margin-bottom: -0.6rem;
   border-top-right-radius: 6rem;
 }
 
@@ -320,6 +325,7 @@ a.see-project-btn {
   margin: 0.5rem auto;
   background-color: #fff;
   padding-left: 1rem;
+  padding-top: 1rem;
 }
 
 .languages-title {
@@ -330,12 +336,6 @@ a.see-project-btn {
   font-size: 1.25rem;
   line-height: 1.5rem;
 }
-
-/* .language {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
-} */
 
 .card-language {
   display: flex;
