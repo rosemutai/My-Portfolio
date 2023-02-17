@@ -168,14 +168,18 @@ button:disabled {
 
 .project-links {
   display: flex;
+  list-style-type: none;
+  margin-left: 1rem;
+  margin-bottom: -0.5rem;
+  margin-top: 0.5rem;
 }
 
 .canopy {
-  color: #344563;
   font-style: normal;
   font-weight: 600;
-  font-size: 1rem;
-  line-height: 1rem;
+  font-size: 1.2rem;
+  color: #344563;
+  margin-left: -2.2rem;
 }
 
 .small-circle {
@@ -211,21 +215,6 @@ ul.project-links {
   width: 80%;
   align-items: center;
   justify-content: flex-start;
-  
-}
-
-.project-links {
-  list-style-type: none;
-  margin-left: 1rem;
-  margin-bottom: -0.5rem;
-  margin-top: 0.5rem;
-}
-
-.small-circle {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background-color: #c1d7d0;
 }
 
 .project-title {
@@ -236,14 +225,6 @@ ul.project-links {
   padding-left: 1rem;
   margin-bottom: -0.5rem;
   line-height: 2.4rem;
-}
-
-.canopy {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.2rem;
-  color: #344563;
-  margin-left: -2.2rem;
 }
 
 .career-role,
