@@ -346,7 +346,6 @@ a.see-project-btn {
 .card-framework {
   display: flex;
   justify-content: space-between;
-
 }
 
 .arrow-img {
@@ -360,7 +359,6 @@ a.see-project-btn {
   margin-top: 1rem;
   width: 90%;
   border-radius: 0.5rem;
-  
 }
 
 .frameworks,
