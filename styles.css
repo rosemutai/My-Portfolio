@@ -392,24 +392,28 @@ hr {
 
 .contact-form-section {
   width: 100%;
-  background-image: url('images/contactformshapes.svg"');
+  background-image: url('images/contactformshapes.svg');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 265px 705.17px;
+  background-position: right;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #6070ff;
   border-top-left-radius: 6rem;
+  height: 739px;
 }
 
 .contact-me-title {
   color: #fff;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 36px;
   line-height: 3.25rem;
   margin-bottom: 30px;
-  margin-top: 46px;
+  margin-top: 96px;
+  
 }
 
 .contact-form {
@@ -419,9 +423,18 @@ hr {
   padding-left: 0.5rem;
   padding-right: 0.5rem
 }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
+form li + li {
+  margin-top: 3px;
+}
 .contact-description {
   color: #ebebff;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
