@@ -68,6 +68,10 @@ li {
   margin-right: 0.75rem;
 }
 
+form li+li {
+  margin-top: 3px;
+}
+
 .nav-links ul li {
   list-style: none;
   font-family: 'Poppins', sans-serif;
@@ -413,7 +417,6 @@ hr {
   line-height: 3.25rem;
   margin-bottom: 30px;
   margin-top: 96px;
-  
 }
 
 .contact-form {
@@ -421,17 +424,15 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   padding-left: 0.5rem;
-  padding-right: 0.5rem
+  padding-right: 0.5rem;
 }
+
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-form li + li {
-  margin-top: 3px;
-}
 .contact-description {
   color: #ebebff;
   font-family: 'Poppins', sans-serif;
@@ -464,7 +465,7 @@ textarea::placeholder {
   padding: 0.6rem;
   width: 327px;
   height: 170px;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   padding-top: 15px;
   margin-bottom: 1rem;
