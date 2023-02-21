@@ -64,12 +64,12 @@ li {
   list-style: none;
 }
 
-.project-links li {
-  margin-right: 0.75rem;
+form li + li {
+  margin-top: 3px;
 }
 
-form li+li {
-  margin-top: 3px;
+.project-links li {
+  margin-right: 0.75rem;
 }
 
 .nav-links ul li {
