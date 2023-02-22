@@ -28,7 +28,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #fff;
+  color: #344563;
 }
 
 .logo {
@@ -96,11 +96,6 @@ h1.about-title {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-}
-
-.padding {
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 .about-me {
@@ -219,6 +214,11 @@ button:disabled {
   border: 1px solid #dfe1e6;
   background-color: #fff;
   padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.second-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .project-image img {
@@ -357,14 +357,6 @@ a.see-project-btn {
   height: 1rem;
 }
 
-.js-img img,
-.html-img img,
-.css-img img {
-  margin-top: 1rem;
-  width: 90%;
-  border-radius: 0.5rem;
-}
-
 .frameworks,
 .skills {
   background-color: #fff;
@@ -385,13 +377,6 @@ hr {
   width: 90%;
   border: none;
   border-bottom: 1px solid #dfe1e6;
-}
-
-.framework-list,
-.skill-list {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
 }
 
 .contact-form-section {
@@ -511,6 +496,11 @@ textarea::placeholder {
     flex-direction: column;
   }
 
+  .padding {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
   .close-nav-icon {
     position: relative;
   }
@@ -537,5 +527,266 @@ textarea::placeholder {
 
   .see-project-btn {
     width: 50%;
+  }
+
+  .js-img img,
+  .html-img img,
+  .css-img img {
+    margin-top: 1rem;
+    width: 90%;
+    border-radius: 0.5rem;
+  }
+
+  .framework-list,
+  .skill-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    padding-left: 155px;
+  }
+
+  .nav {
+    margin-right: 154px;
+  }
+
+  a.logo {
+    font-size: 28px;
+  }
+
+  .logo-section {
+    padding-top: 24px;
+  }
+
+  .bars {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    visibility: visible;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .nav-links img {
+    display: none;
+  }
+
+  .nav-links a {
+    margin-right: 25px;
+    font-size: 22px;
+  }
+
+  .hero-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 700px;
+    margin: 50px auto;
+    padding-left: 400px;
+    border-bottom-left-radius: 6rem;
+    background-image: url("images/Headerdesktopbg.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .full-description .about-me {
+    width: 45%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+.about-rose .full-description .about-me {
+  width: 60%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 14px;
+}
+
+  .card {
+    width: 1156px;
+    height: 30rem;
+    flex-direction: row;
+    padding: 16px 32px 16px 32px;
+    margin: 2rem auto;
+    border-radius: 24px;
+
+  }
+
+  .card .first-column {
+    width: 50%;
+  }
+
+  .card .second-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  a.see-project-btn {
+    width: 30%;
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+
+  .project-title {
+    margin-top: 28px;
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+
+  .project-description p {
+    width: 58%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .project-image img {
+    height: 100%;
+    margin: 0 auto
+  }
+
+  .art-project-img,
+  .last-project-img {
+    order: 2;
+  }
+
+  .art-project-description,
+  .last-project-description {
+    order: 1;
+    padding-left: 40px;
+  }
+
+  .about-rose {
+    border-top-right-radius: 0;
+    margin-top: 0;
+    padding-left: 200px;
+    width: 50%;
+    height: 650px;
+  }
+
+  .rose-full-details {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 6rem;
+    margin-top: 20px;
+    padding: 100px;
+  }
+
+  h1.about-title {
+    width: 30%;
+    padding: 1rem 0 1rem 0;
+    margin-left: 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+  }
+
+  .hero-section .icons {
+    padding-left: 0;
+    width: 16%;
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+  .hero-section .socials-section .icons li a img {
+    margin-right: 0px;
+  }
+
+  .icons {
+    padding-left: 0;
+  }
+
+  ul.details {
+    width: 20%;
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+  ul.details li img {
+    margin-right: 4px;
+  }
+
+  .languages {
+    width: 50%;
+    margin: 0;
+    background-color: #fff;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    height: 650px;
+    margin-left: -24px;
+  }
+
+  .card-language {
+    padding-top: 1rem;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .languages-title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .js-img img,
+  .html-img img,
+  .css-img {
+    margin-right: 24px;
+  }
+
+ .framework-list {
+  margin-top: 12px;
+ }
+
+  .framework-list,
+  .skill-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .arrow-img {
+    margin-top: 1rem;
+  }
+
+  .contact-description {
+    width: 24%;
+    margin: 12px auto;
+  }
+
+  .contact-form input {
+    border-radius: 2px;
+    width: 447px;
+  }
+
+  .contact-form textarea {
+    width: 447px;
+    height: 170px;
+    border-radius: 2px;
+  }
+
+  .contact-form button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-form-section {
+    background-image: url('images/contactformbg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 }
