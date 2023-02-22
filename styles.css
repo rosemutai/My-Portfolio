@@ -602,12 +602,12 @@ textarea::placeholder {
     padding-bottom: 12px;
   }
 
-.about-rose .full-description .about-me {
-  width: 60%;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  font-size: 14px;
-}
+  .about-rose .full-description .about-me {
+    width: 60%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 14px;
+  }
 
   .card {
     width: 1156px;
@@ -616,7 +616,6 @@ textarea::placeholder {
     padding: 16px 32px 16px 32px;
     margin: 2rem auto;
     border-radius: 24px;
-
   }
 
   .card .first-column {
@@ -650,7 +649,7 @@ textarea::placeholder {
 
   .project-image img {
     height: 100%;
-    margin: 0 auto
+    margin: 0 auto;
   }
 
   .art-project-img,
@@ -691,6 +690,10 @@ textarea::placeholder {
     letter-spacing: 0.37px;
   }
 
+  .icons {
+    padding-left: 0;
+  }
+
   .hero-section .icons {
     padding-left: 0;
     width: 16%;
@@ -698,22 +701,24 @@ textarea::placeholder {
     margin-top: 12px;
   }
 
-  .hero-section .socials-section .icons li a img {
-    margin-right: 0px;
+  .js-img img,
+  .html-img img,
+  .css-img {
+    margin-right: 24px;
   }
 
-  .icons {
-    padding-left: 0;
+  ul.details li img {
+    margin-right: 4px;
+  }
+
+  .hero-section .socials-section .icons li a img {
+    margin-right: 0;
   }
 
   ul.details {
     width: 20%;
     margin-left: 0;
     margin-top: 12px;
-  }
-
-  ul.details li img {
-    margin-right: 4px;
   }
 
   .languages {
@@ -741,15 +746,9 @@ textarea::placeholder {
     margin-bottom: 1rem;
   }
 
-  .js-img img,
-  .html-img img,
-  .css-img {
-    margin-right: 24px;
+  .framework-list {
+    margin-top: 12px;
   }
-
- .framework-list {
-  margin-top: 12px;
- }
 
   .framework-list,
   .skill-list {
