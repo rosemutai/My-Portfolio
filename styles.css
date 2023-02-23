@@ -488,6 +488,10 @@ textarea::placeholder {
     flex-direction: column;
   }
 
+  .logo-section {
+    padding-top: 40px;
+}
+
   .padding {
     padding-left: 24px;
     padding-right: 24px;
@@ -597,6 +601,7 @@ textarea::placeholder {
 
   .logo-section {
     padding-top: 24px;
+
   }
 
   .bars {
