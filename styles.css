@@ -16,6 +16,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  background-color: #fff;
 }
 
 body {
@@ -28,7 +29,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #fff;
+  color: #344563;
 }
 
 .logo {
@@ -82,6 +83,7 @@ form li + li {
 }
 
 .hero-section {
+  background-color: #fff;
   width: 100%;
   background-image: url("images/header-shapes-mobile.svg");
   background-repeat: no-repeat;
@@ -96,11 +98,6 @@ h1.about-title {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-}
-
-.padding {
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 .about-me {
@@ -221,6 +218,11 @@ button:disabled {
   padding: 1rem 1rem 1.5rem 1rem;
 }
 
+.second-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .project-image img {
   width: 100%;
 }
@@ -314,22 +316,14 @@ a.see-project-btn {
 
 .about-rose {
   background-color: #fff;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  padding-left: 1rem;
-  padding-top: 4rem;
-  margin-top: 2rem;
   border-top-right-radius: 6rem;
+  padding-bottom: 20px;
 }
 
 .languages {
-  width: 98%;
-  margin: 0.5rem auto 0 auto;
   background-color: #fff;
-  padding-left: 1rem;
-  height: 600px;
 }
 
 .languages-title {
@@ -337,14 +331,7 @@ a.see-project-btn {
   font-style: normal;
   font-weight: 500;
   font-weight: bolder;
-  font-size: 1.25rem;
   line-height: 1.5rem;
-}
-
-.card-language {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .card-framework {
@@ -355,14 +342,6 @@ a.see-project-btn {
 .arrow-img {
   width: 1rem;
   height: 1rem;
-}
-
-.js-img img,
-.html-img img,
-.css-img img {
-  margin-top: 1rem;
-  width: 90%;
-  border-radius: 0.5rem;
 }
 
 .frameworks,
@@ -385,13 +364,6 @@ hr {
   width: 90%;
   border: none;
   border-bottom: 1px solid #dfe1e6;
-}
-
-.framework-list,
-.skill-list {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
 }
 
 .contact-form-section {
@@ -498,6 +470,11 @@ textarea::placeholder {
   color: #5e6c84;
 }
 
+.lang {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media only screen and (max-width: 768px) {
   .nav-links {
     width: 100%;
@@ -509,6 +486,15 @@ textarea::placeholder {
     z-index: 10;
     display: flex;
     flex-direction: column;
+  }
+
+  .logo-section {
+    padding-top: 40px;
+  }
+
+  .padding {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .close-nav-icon {
@@ -523,7 +509,7 @@ textarea::placeholder {
 
   h1.about-title {
     width: 70%;
-    padding-top: 1rem;
+    padding-top: 200px;
     padding-bottom: 1rem;
   }
 
@@ -537,5 +523,336 @@ textarea::placeholder {
 
   .see-project-btn {
     width: 50%;
+  }
+
+  .about-rose {
+    width: 100%;
+    height: 100vh;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+
+  .languages {
+    width: 98%;
+    margin: 0.5rem auto 0 auto;
+    padding-left: 1rem;
+    height: 600px;
+  }
+
+  .js-img img,
+  .html-img img,
+  .css-img img {
+    margin-top: 1rem;
+    width: 48px;
+    border-radius: 0.5rem;
+  }
+
+  .card-language li {
+    width: 90%;
+    height: 80px;
+    background-color: #f7f7f9;
+    border-radius: 8px;
+    margin: 12px auto 12px auto;
+    display: flex;
+    color: #253858;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 8px;
+    align-items: center;
+  }
+
+  .lang {
+    margin: 40px 0 20px auto;
+  }
+
+  .js,
+  .html,
+  .css {
+    padding-right: 10px;
+  }
+
+  .card-language {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .framework-list,
+  .skill-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    padding-left: 155px;
+  }
+
+  .nav {
+    margin-right: 154px;
+  }
+
+  a.logo {
+    font-size: 28px;
+  }
+
+  .logo-section {
+    padding-top: 24px;
+  }
+
+  .bars {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    visibility: visible;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .nav-links img {
+    display: none;
+  }
+
+  .nav-links a {
+    margin-right: 25px;
+    font-size: 22px;
+  }
+
+  .hero-section {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 700px;
+    padding-left: 300px;
+    border-bottom-left-radius: 6rem;
+    background-image: url("images/Headerdesktopbg.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .hero-section .full-description .about-me {
+    width: 700px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .about-rose .full-description .about-me {
+    width: 500px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 14px;
+  }
+
+  .card {
+    width: 1156px;
+    height: 30rem;
+    flex-direction: row;
+    padding: 16px 32px 16px 32px;
+    margin: 2rem auto;
+    border-radius: 24px;
+  }
+
+  .card .first-column {
+    width: 50%;
+  }
+
+  .card .second-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  a.see-project-btn {
+    width: 40%;
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+
+  .project-title {
+    margin-top: 28px;
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+
+  .project-description p {
+    width: 58%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .project-image img {
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .art-project-img,
+  .last-project-img {
+    order: 2;
+  }
+
+  .art-project-description,
+  .last-project-description {
+    order: 1;
+    padding-left: 40px;
+  }
+
+  .about-rose {
+    border-top-right-radius: 0;
+    margin-top: 0;
+    padding-left: 200px;
+    height: 650px;
+  }
+
+  .rose-full-details {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 6rem;
+    margin-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .hero-section .about-title-section h1.about-title {
+    width: 800px;
+    padding: 1rem 0 1rem 0;
+    margin-left: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+  }
+
+  .icons {
+    padding-left: 0;
+  }
+
+  .hero-section .icons {
+    padding-left: 0;
+    width: 16%;
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+  ul.details li img {
+    margin-right: 12px;
+  }
+
+  .hero-section .socials-section .icons li a img {
+    margin-right: 0;
+  }
+
+  ul.details {
+    width: 20%;
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+  .languages {
+    width: 800px;
+    margin: 0;
+    background-color: #fff;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+  }
+
+  .card-language {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .card-language li {
+    width: 122px;
+    height: 120px;
+    background-color: #f7f7f9;
+    border-radius: 8px;
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+    color: #253858;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 8px;
+  }
+
+  img.html,
+  img.js,
+  img.css {
+    width: 48px;
+    height: 48px;
+    padding-bottom: 12px;
+  }
+
+  .js-img,
+  .html-img,
+  .css-img {
+    margin-right: 12px;
+    margin-top: 1rem;
+  }
+
+  .languages-title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .framework-list {
+    margin-top: 12px;
+  }
+
+  .framework-list,
+  .skill-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .arrow-img {
+    margin-top: 1rem;
+  }
+
+  .contact-description {
+    width: 24%;
+    margin: 12px auto;
+  }
+
+  .contact-form input {
+    border-radius: 2px;
+    width: 447px;
+  }
+
+  .contact-form textarea {
+    width: 447px;
+    height: 170px;
+    border-radius: 2px;
+  }
+
+  .contact-form button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .arrow-down {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 30px;
+  }
+
+  .contact-form-section {
+    background-image: url('images/contactformbg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 }
