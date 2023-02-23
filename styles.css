@@ -331,7 +331,6 @@ a.see-project-btn {
   font-style: normal;
   font-weight: 500;
   font-weight: bolder;
-  /* font-size: 1.25rem; */
   line-height: 1.5rem;
 }
 
@@ -739,8 +738,6 @@ textarea::placeholder {
     margin-top: 12px;
   }
 
- 
-
   ul.details li img {
     margin-right: 12px;
   }
@@ -799,7 +796,6 @@ textarea::placeholder {
   .css-img {
     margin-right: 12px;
     margin-top: 1rem;
-    
   }
 
   .languages-title {
