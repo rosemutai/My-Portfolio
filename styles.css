@@ -590,6 +590,11 @@ textarea::placeholder {
   }
 }
 
+img:hover {
+  transform: scale(1.3);
+  transition: all 2s ease-in-out 0.4s;
+}
+
 @media only screen and (min-width: 768px) {
   .header {
     padding-left: 155px;
