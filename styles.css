@@ -598,7 +598,6 @@ textarea::placeholder {
     width: 75%;
     height: 20%;
   }
-
 }
 
 img:hover {
@@ -736,7 +735,7 @@ img:hover {
     margin-top: 10%;
   }
 
-  .hero-section .about-title-section h1.about-title, 
+  .hero-section .about-title-section h1.about-title,
   h2.about-title {
     width: 100%;
     padding: 1rem 0 1rem 0;
@@ -745,7 +744,6 @@ img:hover {
     font-weight: 700;
     line-height: 60px;
     letter-spacing: 0.37px;
-
   }
 
   .icons {
@@ -779,8 +777,7 @@ img:hover {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    padding-right: 10%;
-    
+    padding-right: 10%; 
   }
 
   .card-language {
