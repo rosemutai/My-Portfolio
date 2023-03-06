@@ -543,13 +543,6 @@ textarea::placeholder {
     margin-top: 2rem;
   }
 
-  .languages {
-    width: 98%;
-    margin: 0.5rem auto 0 auto;
-    padding-left: 1rem;
-    height: 20%;
-  }
-
   .js-img img,
   .html-img img,
   .css-img img {
@@ -724,8 +717,8 @@ img:hover {
   .about-rose {
     border-top-right-radius: 0;
     margin-top: 0;
-    padding-left: 200px;
-    height: 100%;
+    padding-left: 10%;
+    padding-right: 5%;
   }
 
   .rose-full-details {
@@ -734,9 +727,7 @@ img:hover {
     display: flex;
     justify-content: space-between;
     border-top-right-radius: 6rem;
-    margin-top: 20px;
-    padding-left: 0;
-    padding-right: 0;
+    margin-top: 10%;
   }
 
   .hero-section .about-title-section h1.about-title, 
@@ -777,19 +768,21 @@ img:hover {
   }
 
   .languages {
-    width: 50%;
+    width: 100%;
     margin: 0;
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    
+    padding-right: 10%;
   }
 
   .card-language {
-    margin-top: 1rem;
+    margin-top: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    width: 120%;
+    height: 20%;
   }
 
   .card-language li {
@@ -823,18 +816,24 @@ img:hover {
 
   .languages-title {
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    width: 120%;
+    height: 20%;
   }
 
   .framework-list {
     margin-top: 12px;
   }
 
-  .framework-list,
+  .framework-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 8% 1rem 1rem 1rem;
+  }
+
   .skill-list {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0 1rem 0 1rem; 
   }
 
   .arrow-img {
@@ -885,4 +884,27 @@ img:hover {
   .bars {
     display: none;
   }
+
+  .frameworks,
+  .skills {
+    width: 120%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  hr {
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #dfe1e6;
+  }
+
+.framework-list .languages-title,
+.skill-list, .languages-title {
+  width: 120%;
+  height: 20%;
+}
+
 }
