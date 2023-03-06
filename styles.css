@@ -75,15 +75,6 @@ form li + li {
   margin-right: 0.75rem;
 }
 
-.nav-links ul li {
-  list-style: none;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-}
-
 .hero-section {
   background-color: #fff;
   width: 100%;
@@ -523,7 +514,7 @@ textarea::placeholder {
   }
 
   .nav-links ul li {
-    list-style: none; 
+    list-style: none;
   }
 
   .logo-section {
@@ -849,13 +840,10 @@ img:hover {
   }
 
   .framework-list {
-    margin-top: 12px;
-  }
-
-  .framework-list {
     display: flex;
     justify-content: space-between;
     padding: 8% 1rem 1rem 1rem;
+    margin-top: 12px;
   }
 
   .skill-list {
@@ -929,10 +917,19 @@ img:hover {
     border-bottom: 1px solid #dfe1e6;
   }
 
-.framework-list .languages-title,
-.skill-list, .languages-title {
-  width: 120%;
-  height: 20%;
+  .framework-list .languages-title,
+  .skill-list, .languages-title {
+    width: 120%;
+    height: 20%;
+  }
+
 }
 
+.nav-links ul li {
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
 }
