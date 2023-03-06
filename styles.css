@@ -171,10 +171,10 @@ button:disabled {
   transition: all 0.03s;
 }
 
-.nav-links {
+/* .nav-links {
   display: none;
   visibility: hidden;
-}
+} */
 
 .card img {
   width: 100%;
