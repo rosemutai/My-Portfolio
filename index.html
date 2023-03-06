@@ -7,28 +7,30 @@
   <title>Rose's Portfolio - A full-stack Webdeveloper</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="body-content">
+<body class="body-content" id="body">
   <header class="header">
       <div class="logo-section">
         <a href="/" class="logo">Rose</a>
       </div>
       <nav class="nav">
-        <div class="bars" onclick="menu()" id="nav">
+        <div class="bars" onclick="OpenNavBarMenu()" id="hamburger">
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
         </div>
         <!-- <img   src="images/Icon-Cancel.svg" alt=""> -->
         <ul class="nav-links" id="menu-links">
-          <li><img id="iconCancle" src="./images/Icon-Cancel.svg" onclick="cancleIcon()" class="close-icon" alt="close icon"></li>
+          <li><img id="iconCancel" src="./images/Icon-Cancel.svg" onclick="closeNavBarMenu()"
+             class="close-icon" alt="close icon">
+          </li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#aboutme">About</a></li>
-          <li><a href="#contactme">Contact</a></li>
+          <li class="about-link"><a href="#aboutme">About</a></li>
+          <li class="contact-link"><a href="#contactme">Contact</a></li>
         </ul>
       </nav>
     
   </header>
-  <main class="main-content">
+  <main class="main-content" id="maincontent">
     <section class="hero-section">
       <div class="about-title-section">
         <h1 class="about-title padding">I'm Rose Glad to see you!</h1>

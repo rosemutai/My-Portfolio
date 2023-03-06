@@ -1,16 +1,17 @@
+let navLinks = document.getElementById('menu-links')
+let hamburger = document.getElementById('hamburger')
+let iconCancel = document.getElementById('iconCancel')
+let maincontent = document.getElementById('maincontent')
 
-function menu (){
-    let navLinks = document.getElementById('menu-links')
-    let nav = document.getElementById('nav')
-    let iconCancle = document.getElementById('iconCancle')
-    nav.style.display = "none"
+function OpenNavBarMenu (){
     navLinks.style.visibility = "visible"
-    iconCancle.style.display = "flex"
+    hamburger.style.display = "none"
+    maincontent.classList.add("blur")
 }
 
-function cancleIcon (){
-    let navLinks = document.getElementById('navLinks')
+function closeNavBarMenu (){
     navLinks.style.visibility = "hidden"
-    
-    console.log(navLinks);
+    hamburger.style.display = "block"
+    hamburger.style.position = "absolute"
+    maincontent.classList.remove("blur")
 }

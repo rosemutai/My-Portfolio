@@ -50,7 +50,7 @@ body {
   width: 40px;
   height: 40px;
   right: 24px;
-  margin-right: 20%;
+  margin-right: 10%;
   margin-left: 0;
   top: calc(87% - 40px / 2);
 }
@@ -171,12 +171,11 @@ button:disabled {
   transition: all 0.03s;
 }
 
-/* .nav-links {
+.nav-links {
   display: none;
   visibility: hidden;
   color: white;
 }
-} */
 
 .card img {
   width: 100%;
@@ -498,6 +497,33 @@ textarea::placeholder {
     z-index: 10;
     display: flex;
     flex-direction: column;
+    color: white;
+    padding-top: 24%;
+    opacity: 0.7;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    margin: 40px;
+  }
+
+  .about-link,
+  .contact-link {
+    margin-top: 20px;
+  }
+
+  .blur {
+    filter: blur(5px);
+  }
+
+  .nav-links ul li {
+    list-style: none; 
   }
 
   .logo-section {
@@ -515,40 +541,8 @@ textarea::placeholder {
 
   .close-icon {
     position: absolute !important;
-    top: 4px;
-    right: 4px;
-  }
-
-  .active{
-    width: 100%;
-    background-color: #6070ff;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #menu-links{
-    width: 100%;
-    background-color: #6070ffd0;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    color: white;
-  }
-
-  #iconCancle{
-    /* position: absolute; */
-    z-index: 2;
-    display: none;
+    top: 5%;
+    right: 5%;
   }
 
   h1.about-title {
