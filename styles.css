@@ -849,7 +849,7 @@ img:hover {
   .skill-list {
     display: flex;
     justify-content: space-between;
-    padding: 0 1rem 0 1rem; 
+    padding: 0 1rem 0 1rem;
   }
 
   .arrow-img {
@@ -922,7 +922,6 @@ img:hover {
     width: 120%;
     height: 20%;
   }
-
 }
 
 .nav-links ul li {
