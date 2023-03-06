@@ -174,7 +174,7 @@ git@github.com:rosemutai/My-Portfolio.git
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :busts_in_silhouette: Authors <a name="authors"></a>
-:bust_in_silhouette: **KUBAHO LINNE Heaven**
+:bust_in_silhouette: **ROSE MUTAI**
 - GitHub: [rosemutai](https://github.com/rosemutai)
 - Twitter: [__rosemutai](https://twitter.com/__rosemutai)
 - LinkedIn: [Rose Mutai](https://www.linkedin.com/in/rosemutai/)
@@ -184,6 +184,9 @@ git@github.com:rosemutai/My-Portfolio.git
 - [ ] **making the porfolio responsive**<br/>
 - [ ] **Adding Animation**<br/>
 - [ ] **Making it dynamic**
+- [ ]  **Loom link explaining the project** https://www.loom.com/share/a837017526624df386ce0423e4832f76
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- CONTRIBUTING -->
 ## 🤝 Contributing <a name="contributing"></a>
