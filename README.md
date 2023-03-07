@@ -92,7 +92,7 @@ This project is built with HTML & CSS to showcase my html and css skills..
 
 <!-- Features -->
 
-### Key Features <a name="key-features"></a>
+## Key Features <a name="key-features"></a>
 
 - **Linters SetUp**
 - **Follow HTML and CSS best practices**
@@ -103,8 +103,6 @@ This project is built with HTML & CSS to showcase my html and css skills..
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://rosemutai.github.io/My-Portfolio/)
 
@@ -174,32 +172,39 @@ git@github.com:rosemutai/My-Portfolio.git
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :busts_in_silhouette: Authors <a name="authors"></a>
-:bust_in_silhouette: **KUBAHO LINNE Heaven**
+:bust_in_silhouette: **ROSE MUTAI**
 - GitHub: [rosemutai](https://github.com/rosemutai)
 - Twitter: [__rosemutai](https://twitter.com/__rosemutai)
 - LinkedIn: [Rose Mutai](https://www.linkedin.com/in/rosemutai/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- FUTURE FEATURES -->
-### Key Features <a name="key-features"></a>
-- [ ] **making the porfolio responsive**<br/>
-- [ ] **Adding Animation**<br/>
-- [ ] **Making it dynamic**
+## Future Features <a name="future-features"></a>
+
+- [ ] **Make the porfolio responsive**<br/>
+- [ ] **Add Animation**<br/>
+- [ ] **Make the portfolio dynamic**
+- [ ] **Loom link explaining the project** https://www.loom.com/share/a837017526624df386ce0423e4832f76
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- CONTRIBUTING -->
 ## 🤝 Contributing <a name="contributing"></a>
 Contributions, issues, and feature requests are welcome!<br/>
 Feel free to check the [https://github.com/rosemutai/My-Portfolio/issues.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- SUPPORT -->
 ## ⭐️ Show your support <a name="support"></a>
 If you like this project please follow me on github & twitter and also connect on Linkedin.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- ACKNOWLEDGEMENTS -->
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 I would like to thank Microverse for this exercise.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!-- LICENSE -->
 
+<!-- LICENSE -->
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](https://github.com/rosemutai/My-Portfolio/blob/main/LICENSE) licensed.

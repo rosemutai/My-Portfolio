@@ -7,27 +7,28 @@
   <title>Rose's Portfolio - A full-stack Webdeveloper</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="body-content">
+<body class="body-content" id="body">
   <header class="header">
       <div class="logo-section">
         <a href="/" class="logo">Rose</a>
       </div>
       <nav class="nav">
-        <div class="bars">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+        <div >
+          <img class="bars"  id="hamburger" src="./images/hamburger.svg"
+            alt="hamburger icon">
         </div>
-        <ul class="nav-links">
-          <li><img src="./images/Icon-Cancel.svg" class="close-icon" alt="close icon"></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#aboutme">About</a></li>
-          <li><a href="#contactme">Contact</a></li>
+        <ul class="nav-links" id="menu-links">
+          <li><img id="iconCancel" src="./images/Icon-Cancel.svg"
+             class="close-icon" alt="close icon">
+          </li>
+          <li><a href="#portfolio" class="menu-anchor">Portfolio</a></li>
+          <li class="about-link"><a href="#aboutme" class="menu-anchor">About</a></li>
+          <li class="contact-link"><a href="#contactme" class="menu-anchor">Contact</a></li>
         </ul>
       </nav>
     
   </header>
-  <main class="main-content">
+  <main class="main-content" id="maincontent">
     <section class="hero-section">
       <div class="about-title-section">
         <h1 class="about-title padding">I'm Rose Glad to see you!</h1>
@@ -86,7 +87,7 @@
               <li><a href="#" class="skill-link js-btn">javascript</a></li>
             </ul>
             
-            <a href="#" class="see-project-btn">See Project</a>
+            <a href="#" class="see-project-btn" id="view-project-btn">See Project</a>
           </div>
           
         </div>
@@ -225,16 +226,16 @@
                 </li>
               </ul>
             
-            <div class="framework">
+            <div class="frameworks">
               <ul class="framework-list">
-                <li class="languages-title">Frameworks</li>
+                <li class="frame-title">Frameworks</li>
                 <img class="arrow-img" src="./images/Union.svg" alt="arrow right">
               </ul>
             </div>
             <hr>
-            <div class="skill">
+            <div class="skills">
               <ul class="skill-list">
-                <li class="languages-title">Skills</li>
+                <li class="skilltitle">Skills</li>
                 <img class="arrow-img" src="./images/Union.svg" alt="arrow right">
               </ul>
             </div>
@@ -268,6 +269,6 @@
     </section>
    
   </main>
-  
+  <script src="app.js"></script>
 </body>
 </html>

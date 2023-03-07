@@ -47,11 +47,7 @@ body {
 .bars {
   padding-top: 8px;
   position: absolute;
-  width: 40px;
-  height: 40px;
-  right: 24px;
-  margin-right: 20%;
-  margin-left: 0;
+  right: 12%;
   top: calc(87% - 40px / 2);
 }
 
@@ -73,15 +69,6 @@ form li + li {
 
 .project-links li {
   margin-right: 0.75rem;
-}
-
-.nav-links ul li {
-  list-style: none;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
 }
 
 .hero-section {
@@ -174,6 +161,7 @@ button:disabled {
 .nav-links {
   display: none;
   visibility: hidden;
+  color: white;
 }
 
 .card img {
@@ -496,6 +484,29 @@ textarea::placeholder {
     z-index: 10;
     display: flex;
     flex-direction: column;
+    color: white;
+    padding-top: 24%;
+    opacity: 0.7;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    margin: 40px;
+  }
+
+  .about-link,
+  .contact-link {
+    margin-top: 20px;
+  }
+
+  .blur {
+    filter: blur(5px);
   }
 
   .logo-section {
@@ -513,8 +524,8 @@ textarea::placeholder {
 
   .close-icon {
     position: absolute !important;
-    top: 4px;
-    right: 4px;
+    top: 5%;
+    right: 12%;
   }
 
   h1.about-title {
@@ -543,13 +554,6 @@ textarea::placeholder {
     margin-top: 2rem;
   }
 
-  .languages {
-    width: 98%;
-    margin: 0.5rem auto 0 auto;
-    padding-left: 1rem;
-    height: 20%;
-  }
-
   .js-img img,
   .html-img img,
   .css-img img {
@@ -569,6 +573,10 @@ textarea::placeholder {
     font-size: 15px;
     padding: 8px;
     align-items: center;
+  }
+
+  .nav-links ul li {
+    list-style: none;
   }
 
   .lang {
@@ -781,10 +789,12 @@ img:hover {
   }
 
   .card-language {
-    margin-top: 1rem;
+    margin-top: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    width: 120%;
+    height: 20%;
   }
 
   .card-language li {
@@ -818,18 +828,21 @@ img:hover {
 
   .languages-title {
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    width: 120%;
+    height: 20%;
   }
 
   .framework-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 8% 1rem 1rem 1rem;
     margin-top: 12px;
   }
 
-  .framework-list,
   .skill-list {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0 1rem 0 1rem;
   }
 
   .arrow-img {
@@ -880,4 +893,35 @@ img:hover {
   .bars {
     display: none;
   }
+
+  .frameworks,
+  .skills {
+    width: 120%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  hr {
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #dfe1e6;
+  }
+
+  .frame-titles,
+  .skilltitle {
+    width: 120%;
+    height: 20%;
+  }
+}
+
+.nav-links ul li {
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
 }
