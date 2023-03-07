@@ -180,11 +180,11 @@ git@github.com:rosemutai/My-Portfolio.git
 - LinkedIn: [Rose Mutai](https://www.linkedin.com/in/rosemutai/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- FUTURE FEATURES -->
-### Key Features <a name="key-features"></a>
-- [ ] **making the porfolio responsive**<br/>
-- [ ] **Adding Animation**<br/>
-- [ ] **Making it dynamic**
-- [ ]  **Loom link explaining the project** https://www.loom.com/share/a837017526624df386ce0423e4832f76
+### Future Features <a name="future-features"></a>
+- [] **Make the porfolio responsive**<br/>
+- [] **Add Animation**<br/>
+- [] **Make the portfolio dynamic**
+- [] **Loom link explaining the project** https://www.loom.com/share/a837017526624df386ce0423e4832f76
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
