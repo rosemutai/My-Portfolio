@@ -104,8 +104,6 @@ This project is built with HTML & CSS to showcase my html and css skills..
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
 - [Live Demo Link](https://rosemutai.github.io/My-Portfolio/)
 
 
@@ -183,10 +181,10 @@ git@github.com:rosemutai/My-Portfolio.git
 <!-- FUTURE FEATURES -->
 ### Future Features <a name="future-features"></a>
 
-- [] **Make the porfolio responsive**<br/>
-- [] **Add Animation**<br/>
-- [] **Make the portfolio dynamic**
-- [] **Loom link explaining the project** https://www.loom.com/share/a837017526624df386ce0423e4832f76
+- [ ] **Make the porfolio responsive**<br/>
+- [ ] **Add Animation**<br/>
+- [ ] **Make the portfolio dynamic**
+- [ ] **Loom link explaining the project** https://www.loom.com/share/a837017526624df386ce0423e4832f76
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
