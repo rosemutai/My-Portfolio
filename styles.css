@@ -47,10 +47,7 @@ body {
 .bars {
   padding-top: 8px;
   position: absolute;
-  width: 40px;
-  height: 40px;
-  right: 24px;
-  margin-left: 0;
+  right: 12%;
   top: calc(87% - 40px / 2);
 }
 
@@ -528,7 +525,7 @@ textarea::placeholder {
   .close-icon {
     position: absolute !important;
     top: 5%;
-    right: 5%;
+    right: 12%;
   }
 
   h1.about-title {
