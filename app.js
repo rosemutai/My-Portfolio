@@ -19,11 +19,11 @@ iconCancel.addEventListener('click', (() => {
 
 for (let i = 0; i < menuLinks.length; i += 1) {
   menuLinks[i].addEventListener('click', () => {
-  maincontent.classList.remove('blur');
-  navLinks.style.visibility = 'hidden';
-  hamburger.classList.remove('blur');
-  hamburger.style.display = 'block';
-  hamburger.style.position = 'absolute';
-  hamburger.style.display = 'flex';
-  })
-};
+    maincontent.classList.remove('blur');
+    navLinks.style.visibility = 'hidden';
+    hamburger.classList.remove('blur');
+    hamburger.style.display = 'block';
+    hamburger.style.position = 'absolute';
+    hamburger.style.display = 'flex';
+  });
+}
