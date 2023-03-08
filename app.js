@@ -122,18 +122,25 @@ const toggleDetailsModal = () => {
 const modalTitle = document.getElementById('modal-title')
 
 const htmlBtns = document.querySelectorAll('.html-btn')
-for(let i = 0;i < htmlBtns.length; i += 1){
-  htmlBtns.innerHTML[i] = storeData[0].technologies[0]
+for(let i = 0; i < htmlBtns.length; i += 1){
+  for(let k = 0; k < projects[0].technologies.length; k += 1){
+    htmlBtns.innerHTML[i] = projects[0].technologies[k]
+  }
+  
 }
 
 const cssBtns = document.querySelectorAll('.css-btn')
 for(let i=0; i < cssBtns.length; i += 1) {
-  cssBtns.innerHTML[i] = storeData[0].technologies[1]
+  for(let k = 0; k < projects[0].technologies.length; k += 1){
+    cssBtns.innerHTML[i] = projects[1].technologies[k]
+  }
 }
 
 const jsBtns = document.querySelectorAll('.js-btn')
 for(let i=0; i < jsBtns.length;i+=1) {
-  jsBtns.innerHTML[i] = storeData[0].technologies[2]
+  for(let k = 0; k < projects[0].technologies.length; k += 1){
+    jsBtns.innerHTML[i] = projects[2].technologies[k]
+  }
 }
 
 const htmlSkill = document.getElementById('htmlSkill')
@@ -143,26 +150,26 @@ function viewProject1 () {
     modalImage.src = projects[0].featuredImage
     modalTitle.innerText = projects[0].name
     cardDescription.innerText = projects[0].description  
+    closeModalButton.addEventListener('click', toggleDetailsModal)
 }
 
 function viewProject2 () {
     toggleDetailsModal()
     modalImage.src = projects[1].featuredImage
     modalTitle.innerText = projects[1].name
+    closeModalButton.addEventListener('click', toggleDetailsModal)
 }
 
 function viewProject3 () {
     toggleDetailsModal()
     modalImage.src = projects[2].featuredImage
     modalTitle.innerText = projects[2].name
+    closeModalButton.addEventListener('click', toggleDetailsModal)
 }
 
 function viewProject4 () {
     toggleDetailsModal()
     modalImage.src = projects[3].featuredImage
     modalTitle.innerText = projects[3].name
+    closeModalButton.addEventListener('click', toggleDetailsModal)
 }
-
-
-
-closeModalButton.addEventListener('click', toggleDetailsModal)
