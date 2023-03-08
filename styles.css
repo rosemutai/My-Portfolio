@@ -1062,7 +1062,7 @@ body {
     overflow: auto;
   }
 
-  .modal img {
+  .modal img.modalImage {
     width: 98%;
     height: 70%;
     object-fit: contain;
@@ -1146,6 +1146,17 @@ body {
   border: 1px solid #396df2;
   padding: 8px;
   border-radius: 0.8rem;
+}
+
+.modal-section {
+  width: 100%;
+  min-height: 100vh;
+  transition: 0.2s ease-in-out;
+  background-color: rgba(165, 185, 224, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  display: none;
+  overflow: auto;
 }
 }
 
