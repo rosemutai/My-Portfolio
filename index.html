@@ -9,24 +9,23 @@
 </head>
 <body class="body-content" id="body">
   <!-- start of modal -->
-
-  <div class="modal">
-    <div><h3 class="project-title">Tonic</h3></div>
+  <div class="modal" id="details-modal">
+    <div><h3 id="modal-title" class="project-title"></h3></div>
     <ul class="project-links">
-      <li class="canopy">CANOPY</li>
+      <li id="comapany" class="canopy">canopoy</li>
       <li class="small-circle">.</li>
-      <li class="career-role">Back End Dev</li>
+      <li id="role" class="career-role">backend dev</li>
       <li class="small-circle">.</li>
-      <li class="year">2015</li>
+      <li id="jobyear" class="year">2015</li>
     </ul>
     <img id="closeModal" src="./images/IconTimes.svg" class="cancel-modal" alt="close icon">
-    <img src="./images/newProject.svg" alt="avocode project-image" srcset="">
+    <img id="modalImage" src="./images/newProject.svg" alt="avocode project-image" srcset="">
     <div class="img">
       
     </div>
     
-    <div class="description-and-links">
-      <p>A daily selection of privately personalized
+    <div id="cardDescription" class="description-and-links">
+      <p class="modal-description">A daily selection of privately personalized
         reads; no accounts or sign-ups required.
       </p>
       <div class="modal-right">
@@ -40,8 +39,8 @@
           <hr>
         </div>
         <div class="btns">
-          <a href="#" class="see-project-btn">See Project</a>
-          <a href="#" class="see-project-btn">See Project</a>
+          <a href=""  class="see-project-btn">See live</a>
+          <a  href="" class="see-project-btn">See SOurce</a>
         </div>
       </div>
     </div>
@@ -62,9 +61,6 @@
           <li><img id="iconCancel" src="./images/Icon-Cancel.svg"
              class="close-icon" alt="close icon">
           </li>
-          <li><a href="#portfolio" class="menu-anchor">Portfolio</a></li>
-          <li class="about-link"><a href="#aboutme" class="menu-anchor">About</a></li>
-          <li class="contact-link"><a href="#contactme" class="menu-anchor">Contact</a></li>
           <li><a href="#portfolio" class="menu-anchor">Portfolio</a></li>
           <li class="about-link"><a href="#aboutme" class="menu-anchor">About</a></li>
           <li class="contact-link"><a href="#contactme" class="menu-anchor">Contact</a></li>
@@ -108,7 +104,7 @@
 
         <!-- first card -->
         <div class="card">
-          <div class="project-image first-column" >
+          <div class="project-image first-column" id="cardImg">
             <img src="./images/SnapshootPortfolio.svg" alt="avocode project-image" srcset="">
           </div>
           <div class="second-column">
@@ -131,7 +127,7 @@
               <li><a href="#" class="skill-link js-btn">javascript</a></li>
             </ul>
             
-            <a href="#" class="see-project-btn" id="view-project-btn">See Project</a>
+            <button onclick="viewProject1()" id="toggle" class="see-project-btn open-modal-btn" id="view-project-btn">See Project</button>
           </div>
           
         </div>
@@ -158,7 +154,7 @@
               <li><a href="#" class="skill-link js-btn">javascript</a></li>
             </ul>
           
-            <a href="#" class="see-project-btn">See Project</a>
+            <button onclick="viewProject2()" class="see-project-btn open-modal-btn">See Project</button>
           </div>
           <div class="project-image first-column">
             <img src="./images/SnapshootPortfolio1.svg" alt="avocode project-image" srcset="">
@@ -191,7 +187,7 @@
               <li><a href="#" class="skill-link js-btn">javascript</a></li>
             </ul>
         
-            <a href="#" class="see-project-btn">See Project</a>
+            <button onclick="viewProject3()" class="see-project-btn open-modal-btn">See Project</button>
           </div>
         
         </div>
@@ -218,7 +214,7 @@
               <li><a href="#" class="skill-link js-btn">javascript</a></li>
             </ul>
         
-            <a href="#" class="see-project-btn">See Project</a>
+            <button onclick="viewProject4()" class="see-project-btn open-modal-btn">See Project</button>
           </div>
           <div class="project-image first-column image-fourth-card">
             <img src="./images/SnapshootPortfolio3.svg" alt="avocode project-image" srcset="">
