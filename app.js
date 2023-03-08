@@ -4,7 +4,6 @@ const maincontent = document.getElementById('maincontent');
 const iconCancel = document.querySelector('#iconCancel');
 const menuLinks = document.querySelectorAll('.menu-anchor');
 const closeModalButton = document.getElementById('closeModal');
-const modal = document.getElementById('details-modal');
 const header = document.getElementsByClassName('header');
 let cardProjectTitle = document.getElementsByClassName('project-title');
 const project1Btn = document.getElementById('project1Btn')
@@ -73,13 +72,14 @@ const projects = [
   },
 ]
 
-
+// open mobile menu
 hamburger.addEventListener('click', (() => {
   navLinks.style.visibility = 'visible';
   hamburger.style.display = 'none';
   maincontent.classList.add('blur');
 }));
 
+// close mobile menu
 iconCancel.addEventListener('click', (() => {
   navLinks.style.visibility = 'hidden';
   hamburger.style.display = 'block';
@@ -87,6 +87,8 @@ iconCancel.addEventListener('click', (() => {
   maincontent.classList.remove('blur');
 }));
 
+
+// mobile menu links on click
 for (let i = 0; i < menuLinks.length; i += 1) {
   menuLinks[i].addEventListener('click', () => {
     maincontent.classList.remove('blur');
@@ -98,11 +100,13 @@ for (let i = 0; i < menuLinks.length; i += 1) {
   });
 }
 
+// add blur effect when modal is open
 const addBlurEffect = () => {
   maincontent.classList.toggle('modal-blur');
   header[0].classList.toggle('modal-blur');
 }
 
+// open and close modal
 const toggleDetailsModal = () => {
   console.log("Hey")
   modal.classList.toggle('visible');
@@ -116,9 +120,10 @@ const projectsSection = document.getElementById('portfolio');
 
 // loop through the projects
 for (let i = 0; i < projects.length; i += 1) {
-
+  console.log(i)
   // card
   for(let cardIndex = 0; cardIndex < 4; cardIndex += 1) {
+    console.log(cardIndex)
 
   // create card
   let cardDiv = document.createElement('div');
@@ -153,9 +158,10 @@ for (let i = 0; i < projects.length; i += 1) {
   jobRole.classList.add('canopy');
   jobYear.classList.add('year');
   for (let job in projects[i].experience) {
-    jobCompany.innerHTML = job.company
-    jobRole.innerHTML = job.role
-    jobYear.innerHTML = job.year
+    console.log(job)
+    jobCompany.innerHTML = projects[i].experience.company
+    jobRole.innerHTML = projects[i].experience.role
+    jobYear.innerHTML = projects[i].experience.year
   }
 
   let cardProjectDescription = document.createElement('div');
@@ -199,12 +205,97 @@ for (let i = 0; i < projects.length; i += 1) {
   seeProjectBtn.innerHTML = 'See Project'
   div.appendChild(seeProjectBtn)
 
-  cardDiv.appendChild(imageDiv)
-  cardDiv.appendChild(div)
-  projectsSection.append(cardDiv)
+  seeProjectBtn.addEventListener('click', toggleDetailsModal)
 
+  cardDiv.appendChild(imageDiv);
+  cardDiv.appendChild(div);
+  projectsSection.append(cardDiv);
   }
 
 };
+
+// create Modal
+const modal = document.getElementById('details-modal');
+
+  const modalTitle = document.createElement('h3')
+  modalTitle.classList.add('project-title');
+  modalTitle.innerHTML = projects[projectId].name
+
+  // project ul job experience
+  let modaljobHistoryList = document.createElement('ul');
+  let modaljobCompany = document.createElement('li');
+  let modaljobRole = document.createElement('li');
+  let modaljobYear = document.createElement('li');
+  modaljobHistoryList.classList.add('project-links');
+  modaljobCompany.classList.add('canopy');
+  modaljobRole.classList.add('canopy');
+  modaljobYear.classList.add('year');
+
+  modaljobHistoryList.appendChild(modaljobCompany);
+  modaljobHistoryList.appendChild(modaljobRole);
+  modaljobHistoryList.appendChild(modaljobYear);
+  
+  modal.appendChild(modalTitle);
+  modal.appendChild(modaljobHistoryList);
+
+  let modalCloseIcon = document.createElement('img');
+  modalCloseIcon.classList.add('cancel-modal');
+  modalCloseIcon.src = './images/IconTimes.svg';
+  let modalProjectImage = document.createElement('img');
+  modalProjectImage.classList.add('modalImage');
+
+  modal.appendChild(modalCloseIcon);
+  modal.appendChild(modalProjectImage);
+
+  // modal project description
+  let modalDiv = document.createElement('div');
+  modalDiv.classList.add('description-and-links');
+  let modalPTag = document.createElement('p');
+  modalPTag.classList.add('modal-description')
+  let modalRightDiv = document.createElement('div');
+  modalRightDiv.classList.add('modal-right');
+
+  // modal skills
+  let modalSkillsList = document.createElement('ul');
+  let modalhtmlSkill = document.createElement('li');
+  let modalcsssSkill = document.createElement('li');
+  let modaljsSkill = document.createElement('li');
+  modalSkillsList.classList.add('my-skills');
+  modalhtmlSkill.classList.add('skill-link');
+  modalhtmlSkill.classList.add('html-btn');
+  modalcsssSkill.classList.add('skill-link');
+  modalcsssSkill.classList.add('css-btn');
+  modaljsSkill.classList.add('skill-link');
+  modaljsSkill.classList.add('js-btn');
+
+  modalSkillsList.appendChild(modalhtmlSkill);
+  modalSkillsList.appendChild(modalcsssSkill);
+  modalSkillsList.appendChild(modaljsSkill);
+
+  modal.appendChild(modalSkillsList);
+
+  let hrDiv = document.createElement('div');
+  hrDiv.classList.add('hr');
+  let hr = document.createElement('hr');
+  hrDiv.appendChild(hr)
+  modal.appendChild(hrDiv);
+
+  // buttons
+  let buttonsDiv = document.createElement('div');
+  buttonsDiv.classList.add('btns');
+  let projectLiveLink = document.createElement('a');
+  let sourceCodeLink = document.createElement('a');
+  projectLiveLink.href = '';
+  sourceCodeLink.href = '';
+  projectLiveLink.classList.add('see-project-btn');
+  sourceCodeLink.classList.add('see-project-btn');
+  projectLiveLink.innerHTML = 'See Live';
+  sourceCodeLink.innerHTML = 'See Source';
+  buttonsDiv.appendChild(projectLiveLink);
+  buttonsDiv.appendChild(sourceCodeLink);
+  modal.append(buttonsDiv)
+
+const modalSection = document.getElementsByClassName('modal-section')
+modalSection[0].append(modal)
 
 
