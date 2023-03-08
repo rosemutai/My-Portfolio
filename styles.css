@@ -1059,14 +1059,15 @@ body {
     flex-direction: column;
     background-color: #fff;
     z-index: 20;
+    overflow: auto;
   }
 
-.modal img {
-  width: 98%;
-  height: 70%;
-  object-fit: contain;
-  padding: 24px;
-}
+  .modal img {
+    width: 98%;
+    height: 70%;
+    object-fit: contain;
+    padding: 24px;
+  }
 
 .modal .project-title {
   padding: 80px 0 20px 40px;
@@ -1116,8 +1117,8 @@ body {
   top: 8%;
   right: 5%;
   z-index: 12;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
 }
 
 .modal-blur {
@@ -1134,26 +1135,17 @@ body {
 }
 
 .modal a.see-project-btn {
-  width: 50%;
-  margin-top: 8px;
-  margin-left: 0;
+  width: 120px;
   margin-bottom: 24px;
-}
-
-.modal a.see-project-btn {
   text-decoration: none;
   font-weight: 500;
-  font-size: 1.1rem;
-  line-height: 1.5rem;
   color: #396df2;
   text-align: center;
   letter-spacing: 0.03em;
   background: #fff;
   border: 1px solid #396df2;
-  padding: 0.5rem;
+  padding: 8px;
   border-radius: 0.8rem;
-  margin-top: 1rem;
-  margin-left: 1rem;
 }
 }
 
