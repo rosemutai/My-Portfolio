@@ -9,6 +9,7 @@
 .body-content {
   font-family: 'Poppins', sans-serif;
   background-color: #f7f7f9;
+  position: relative;
 }
 
 .header {
@@ -47,9 +48,7 @@ body {
 .bars {
   padding-top: 8px;
   position: absolute;
-  width: 40px;
-  height: 40px;
-  right: 24px;
+  right: 12%;
   margin-left: 0;
   top: calc(87% - 40px / 2);
 }
@@ -613,7 +612,7 @@ textarea::placeholder {
 
 }
 
-img:hover {
+.card img:hover {
   transform: scale(0.8);
   transition: all 2s ease-in-out 0.4s;
 }
@@ -657,7 +656,7 @@ img:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
+    height: 100vh;
     padding-left: 300px;
     border-bottom-left-radius: 6rem;
     background-image: url("images/Headerdesktopbg.svg");
@@ -666,9 +665,10 @@ img:hover {
   }
 
   .hero-section .full-description .about-me {
-    width: 700px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    width: 60%;
+    padding-top: 16px;
+    font-size: 24px;
+    line-height: 32px;
   }
 
   .about-rose .full-description .about-me {
@@ -679,9 +679,11 @@ img:hover {
   }
 
   .card {
-    width: 90%;
-    height: 98%;
+    width: 80%;
+    height: 80%;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 16px 32px 16px 32px;
     margin: 2rem auto;
     border-radius: 24px;
@@ -695,7 +697,10 @@ img:hover {
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    justify-content: center;
+    padding: 20px;
+    height: 60vh;
+    margin: auto;
   }
 
   a.see-project-btn {
@@ -717,7 +722,7 @@ img:hover {
   }
 
   .project-image img {
-    height: 100%;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -751,11 +756,11 @@ img:hover {
   .hero-section .about-title-section h1.about-title, 
   h2.about-title {
     width: 100%;
-    padding: 1rem 0 1rem 0;
+    padding: 0 0 1rem 0;
     margin-left: 0;
     font-size: 48px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 58px;
     letter-spacing: 0.37px;
 
   }
@@ -766,7 +771,7 @@ img:hover {
 
   .hero-section .icons {
     padding-left: 0;
-    width: 16%;
+    width: 12%;
     margin-left: 0;
     margin-top: 12px;
   }
@@ -920,6 +925,97 @@ img:hover {
   .skilltitle {
     width: 120%;
     height: 20%;
+  }
+  .modal {
+    min-width: 96%;
+    min-height: 100vh;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 2%;
+    background-color: red;
+    border: 1px solid #ebecf0;
+    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal img {
+    width: 98%;
+    height: 70%;
+    object-fit: contain;
+    padding: 24px;
+  }
+
+  .modal .project-title {
+    padding: 80px 0 20px 40px;
+  }
+
+  .modal .description-and-links p {
+    width: 60%;
+    background-color: yellow;
+  }
+
+  .modal .project-links {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 20px 40px;
+  }
+
+  .modal .my-skills {
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    justify-content: flex-end;
+
+  }
+
+  .modal .modal-right {
+    background-color: #000;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-end;
+    padding-right: 24px;
+  }
+
+  .modal .description-and-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+  }
+
+  .modal .btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .modal img.cancel-modal {
+    position: absolute;
+    /* background: #000; */
+    top: 8%;
+    right: 5%;
+    z-index: 12;
+    width: 80px;
+    height: 80px;
+  }
+
+  .modal .hr {
+    width: 40%;
+    margin: 12px 2px 4px 2px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .modal a.see-project-btn {
+    width: 50%;
+    margin-top: 8px;
+    margin-left: 0;
+    margin-bottom: 24px;
   }
 }
 

@@ -8,23 +8,63 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="body-content" id="body">
+  <!-- start of modal -->
+
+  <div class="modal">
+    <div><h3 class="project-title">Tonic</h3></div>
+    <ul class="project-links">
+      <li class="canopy">CANOPY</li>
+      <li class="small-circle">.</li>
+      <li class="career-role">Back End Dev</li>
+      <li class="small-circle">.</li>
+      <li class="year">2015</li>
+    </ul>
+    <img id="closeModal" src="./images/IconTimes.svg" class="cancel-modal" alt="close icon">
+    <img src="./images/newProject.svg" alt="avocode project-image" srcset="">
+    <div class="img">
+      
+    </div>
+    
+    <div class="description-and-links">
+      <p>A daily selection of privately personalized
+        reads; no accounts or sign-ups required.
+      </p>
+      <div class="modal-right">
+        <ul class="my-skills">
+          <li><a href="#" class="skill-link html-btn">html</a></li>
+          <li><a href="#" class="skill-link css-btn">css</a></li>
+          <li><a href="#" class="skill-link js-btn">javascript</a></li>
+          
+        </ul>
+        <div class="hr">
+          <hr>
+        </div>
+        <div class="btns">
+          <a href="#" class="see-project-btn">See Project</a>
+          <a href="#" class="see-project-btn">See Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of modal -->
+
+
   <header class="header">
       <div class="logo-section">
         <a href="/" class="logo">Rose</a>
       </div>
       <nav class="nav">
-        <div class="bars" id="hamburger">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+        <div>
+          <img class="bars"  id="hamburger" src="./images/hamburger.svg"
+            alt="hamburger icon">
         </div>
         <ul class="nav-links" id="menu-links">
           <li><img id="iconCancel" src="./images/Icon-Cancel.svg"
              class="close-icon" alt="close icon">
           </li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li class="about-link"><a href="#aboutme">About</a></li>
-          <li class="contact-link"><a href="#contactme">Contact</a></li>
+          <li><a href="#portfolio" class="menu-anchor">Portfolio</a></li>
+          <li class="about-link"><a href="#aboutme" class="menu-anchor">About</a></li>
+          <li class="contact-link"><a href="#contactme" class="menu-anchor">Contact</a></li>
         </ul>
       </nav>
     
@@ -32,7 +72,7 @@
   <main class="main-content" id="maincontent">
     <section class="hero-section">
       <div class="about-title-section">
-        <h1 class="about-title padding">I'm Rose Glad to see you!</h1>
+        <h1 class="about-title padding">I'm Rose <br>Glad to see you!</h1>
       </div>
       <div class="full-description">
         <p class="about-me padding">I’m a software developer! I can help you build a product , feature
@@ -65,7 +105,7 @@
 
         <!-- first card -->
         <div class="card">
-          <div class="project-image first-column">
+          <div class="project-image first-column" >
             <img src="./images/SnapshootPortfolio.svg" alt="avocode project-image" srcset="">
           </div>
           <div class="second-column">
@@ -88,14 +128,14 @@
               <li><a href="#" class="skill-link js-btn">javascript</a></li>
             </ul>
             
-            <a href="#" class="see-project-btn">See Project</a>
+            <a href="#" class="see-project-btn" id="view-project-btn">See Project</a>
           </div>
           
         </div>
 
         <!-- second card -->
         <div class="card">
-          <div class="second-column">
+          <div class="second-column second-card">
             <h3 class="project-title">Tonic</h3>
             <ul class="project-links">
               <li class="canopy">CANOPY</li>
@@ -155,7 +195,7 @@
 
         <!-- fourth card -->
         <div class="card">
-          <div class="second-column">
+          <div class="second-column fourth-card">
             <h3 class="project-title">Tonic</h3>
             <ul class="project-links">
               <li class="canopy">CANOPY</li>
@@ -177,7 +217,7 @@
         
             <a href="#" class="see-project-btn">See Project</a>
           </div>
-          <div class="project-image first-column">
+          <div class="project-image first-column image-fourth-card">
             <img src="./images/SnapshootPortfolio3.svg" alt="avocode project-image" srcset="">
           </div>
         
