@@ -49,7 +49,10 @@ body {
   padding-top: 8px;
   position: absolute;
   right: 12%;
+<<<<<<< HEAD
   margin-left: 0;
+=======
+>>>>>>> f485e34901dcd179fab96376533dd64d319a10de
   top: calc(87% - 40px / 2);
 }
 
@@ -527,7 +530,7 @@ textarea::placeholder {
   .close-icon {
     position: absolute !important;
     top: 5%;
-    right: 5%;
+    right: 12%;
   }
 
   h1.about-title {
@@ -566,7 +569,6 @@ textarea::placeholder {
 
   .card-language li {
     width: 90%;
-    /* height: 20%; */
     background-color: #f7f7f9;
     border-radius: 8px;
     margin: 12px auto 12px auto;
@@ -609,7 +611,6 @@ textarea::placeholder {
     width: 75%;
     height: 20%;
   }
-
 }
 
 .card img:hover {
@@ -753,7 +754,7 @@ textarea::placeholder {
     margin-top: 10%;
   }
 
-  .hero-section .about-title-section h1.about-title, 
+  .hero-section .about-title-section h1.about-title,
   h2.about-title {
     width: 100%;
     padding: 0 0 1rem 0;
@@ -762,7 +763,6 @@ textarea::placeholder {
     font-weight: 700;
     line-height: 58px;
     letter-spacing: 0.37px;
-
   }
 
   .icons {

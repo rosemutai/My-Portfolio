@@ -92,7 +92,7 @@ This project is built with HTML & CSS to showcase my html and css skills..
 
 <!-- Features -->
 
-### Key Features <a name="key-features"></a>
+## Key Features <a name="key-features"></a>
 
 - **Linters SetUp**
 - **Follow HTML and CSS best practices**
@@ -179,7 +179,7 @@ git@github.com:rosemutai/My-Portfolio.git
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
-### Future Features <a name="future-features"></a>
+## Future Features <a name="future-features"></a>
 
 - [ ] **Make the porfolio responsive**<br/>
 - [ ] **Add Animation**<br/>
