@@ -150,26 +150,26 @@ function viewProject1 () {
     modalImage.src = projects[0].featuredImage
     modalTitle.innerText = projects[0].name
     cardDescription.innerText = projects[0].description  
-    closeModalButton.addEventListener('click', toggleDetailsModal)
 }
 
 function viewProject2 () {
     toggleDetailsModal()
     modalImage.src = projects[1].featuredImage
     modalTitle.innerText = projects[1].name
-    closeModalButton.addEventListener('click', toggleDetailsModal)
 }
 
 function viewProject3 () {
     toggleDetailsModal()
     modalImage.src = projects[2].featuredImage
     modalTitle.innerText = projects[2].name
-    closeModalButton.addEventListener('click', toggleDetailsModal)
 }
 
 function viewProject4 () {
     toggleDetailsModal()
     modalImage.src = projects[3].featuredImage
     modalTitle.innerText = projects[3].name
-    closeModalButton.addEventListener('click', toggleDetailsModal)
 }
+
+
+
+closeModalButton.addEventListener('click', toggleDetailsModal)
