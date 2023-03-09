@@ -278,7 +278,7 @@ for (let i = 0; i < projects.length; i += 1) {
   projectsSection.append(cardDiv);
 }
 
-const form = document.querySelector('form');
+const form = document.getElementById('contactme');
 const emailInput = document.getElementById('youremail');
 
 form.addEventListener('submit', (e) => {
@@ -295,3 +295,27 @@ form.addEventListener('submit', (e) => {
     errorDiv.style.opacity = 0;
   }
 });
+
+const nameInput = form.elements['name'];
+const email = form.elements['email'];
+const messageInput = form.elements['message'];
+
+form.addEventListener('input', () => {
+  const userData = {
+    name: nameInput.value,
+    email: email.value,
+    message: messageInput.value,
+  };
+
+  // store data in local storage
+  const userDataString = JSON.stringify(userData);
+  localStorage.setItem('user', userDataString);
+
+});
+
+// get data from local storage
+const userDataFromLocalStorage = JSON.parse(localStorage.getItem('user')) || {};
+nameInput.value = userDataFromLocalStorage.name || '';
+emailInput.value = userDataFromLocalStorage.email || '';
+messageInput.value = userDataFromLocalStorage.message || '';
+
