@@ -296,7 +296,7 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-const {name: nameInput, email,  message: messageInput}= form.elements;
+const { name: nameInput, email, message: messageInput } = form.elements;
 
 form.addEventListener('input', () => {
   const userData = {
