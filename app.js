@@ -101,87 +101,82 @@ const projectsSection = document.getElementById('portfolio');
 
 // loop through the projects
 for (let i = 0; i < projects.length; i += 1) {
-  console.log(i)
-  
   // create card
-  let cardDiv = document.createElement('div');
-  cardDiv.classList.add('card')
-  cardDiv.classList.add('first-column')
+  const cardDiv = document.createElement('div');
+  cardDiv.classList.add('card');
+  cardDiv.classList.add('first-column');
 
   // first column card image
-  let imageDiv = document.createElement('div');
-  imageDiv.classList.add('project-image')
-  imageDiv.classList.add('first-column')
-  let cardImage = document.createElement('img')
-  cardImage.src = projects[i].featuredImage
-  console.log(projects[i].featuredImage)
-  imageDiv.appendChild(cardImage)
+  const imageDiv = document.createElement('div');
+  imageDiv.classList.add('project-image');
+  imageDiv.classList.add('first-column');
+  const cardImage = document.createElement('img');
+  cardImage.src = projects[i].featuredImage;
+  imageDiv.appendChild(cardImage);
 
   // second column
-  let div = document.createElement('div');
+  const div = document.createElement('div');
   div.classList.add('second-column')
-    // card project title
-  let projectTitle = document.createElement('h3');
+  // card project title
+  const projectTitle = document.createElement('h3');
   projectTitle.classList.add('project-title')
   projectTitle.innerText = projects[i].name
   div.appendChild(projectTitle)
 
-    // project ul job experience
-  let jobHistoryList = document.createElement('ul');
-  let jobCompany = document.createElement('li');
-  let jobRole = document.createElement('li');
-  let jobYear = document.createElement('li');
+  // project ul job experience
+  const jobHistoryList = document.createElement('ul');
+  const jobCompany = document.createElement('li');
+  const jobRole = document.createElement('li');
+  const jobYear = document.createElement('li');
   jobHistoryList.classList.add('project-links');
   jobCompany.classList.add('canopy');
   jobRole.classList.add('canopy');
   jobYear.classList.add('year');
   for (let job in projects[i].experience) {
-    console.log(job)
-    jobCompany.innerHTML = projects[i].experience.company
-    jobRole.innerHTML = projects[i].experience.role
-    jobYear.innerHTML = projects[i].experience.year
+    jobCompany.innerHTML = projects[i].experience.company;
+    jobRole.innerHTML = projects[i].experience.role;
+    jobYear.innerHTML = projects[i].experience.year;
   }
 
-  let cardProjectDescription = document.createElement('div');
+  const cardProjectDescription = document.createElement('div');
   cardProjectDescription.classList.add('project-description');
-  let pTag = document.createElement('p');
+  const pTag = document.createElement('p');
   cardProjectDescription.appendChild(pTag)
   pTag.innerHTML = projects[i].description
   div.appendChild(cardProjectDescription)
 
-  jobHistoryList.appendChild(jobCompany)
-  jobHistoryList.appendChild(jobRole)
-  jobHistoryList.appendChild(jobYear)
-  div.appendChild(jobHistoryList)
+  jobHistoryList.appendChild(jobCompany);
+  jobHistoryList.appendChild(jobRole);
+  jobHistoryList.appendChild(jobYear);
+  div.appendChild(jobHistoryList);
 
     // my skills
-  let mySkillsList = document.createElement('ul');
-  let htmlSkill = document.createElement('li');
-  let csssSkill = document.createElement('li');
-  let jsSkill = document.createElement('li');
+  const mySkillsList = document.createElement('ul');
+  const htmlSkill = document.createElement('li');
+  const csssSkill = document.createElement('li');
+  const jsSkill = document.createElement('li');
   mySkillsList.classList.add('my-skills');
   htmlSkill.classList.add('skill-link');
   htmlSkill.classList.add('html-btn');
   csssSkill.classList.add('skill-link');
   csssSkill.classList.add('css-btn')
   jsSkill.classList.add('skill-link');
-  jsSkill.classList.add('js-btn')
-  
-  htmlSkill.innerHTML = projects[i].technologies[0]
-  csssSkill.innerHTML = projects[i].technologies[1]
-  jsSkill.innerHTML = projects[i].technologies[2]
+  jsSkill.classList.add('js-btn');  
+  htmlSkill.innerHTML = projects[i].technologies[0];
+  csssSkill.innerHTML = projects[i].technologies[1];
+  jsSkill.innerHTML = projects[i].technologies[2];
 
-  mySkillsList.appendChild(htmlSkill)
-  mySkillsList.appendChild(csssSkill)
-  mySkillsList.appendChild(jsSkill)
-  div.appendChild(mySkillsList)
+  mySkillsList.appendChild(htmlSkill);
+  mySkillsList.appendChild(csssSkill);
+  mySkillsList.appendChild(jsSkill);
+  div.appendChild(mySkillsList);
 
   // see project button
   let seeProjectBtn = document.createElement('button');
-  seeProjectBtn.classList.add('see-project-btn')
+  seeProjectBtn.classList.add('see-project-btn');
   seeProjectBtn.classList.add('open-modal-btn');
-  seeProjectBtn.innerHTML = 'See Project'
-  div.appendChild(seeProjectBtn)
+  seeProjectBtn.innerHTML = 'See Project';
+  div.appendChild(seeProjectBtn);
 
   seeProjectBtn.addEventListener('click', toggleDetailsModal)
 
@@ -196,7 +191,6 @@ for (let i = 0; i < projects.length; i += 1) {
 const modal = document.getElementById('details-modal');
 
 function displayModal (id) {
-
   const project = projects[id]
 
   const modalTitle = document.createElement('h3')
