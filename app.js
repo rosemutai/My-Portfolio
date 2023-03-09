@@ -128,7 +128,10 @@ function displayModal(id) {
   const modalCloseIcon = document.createElement('img');
   modalCloseIcon.classList.add('cancel-modal');
   modalCloseIcon.src = './images/IconTimes.svg';
-  modalCloseIcon.addEventListener('click', displayDetailsModal);
+  modalCloseIcon.addEventListener('click', () => {
+    modal.classList.toggle('visible');
+    addBlurEffect();
+  });
   const modalProjectImage = document.createElement('img');
   modalProjectImage.classList.add('modalImage');
   modalProjectImage.src = project.featuredImage;
@@ -158,7 +161,7 @@ function displayModal(id) {
   [
     modalhtmlSkill.innerHTML,
     modalcsssSkill.innerHTML,
-    modaljsSkill.innerHTML
+    modaljsSkill.innerHTML,
   ] = projects[id].technologies;
 
   modalSkillsList.append(modalhtmlSkill);
@@ -171,7 +174,7 @@ function displayModal(id) {
   hrDiv.classList.add('hr');
   const hr = document.createElement('hr');
   hrDiv.append(hr);
-  modalRight.append(hrDiv);
+  modalRightDiv.append(hrDiv);
 
   // buttons
   const buttonsDiv = document.createElement('div');
@@ -186,7 +189,7 @@ function displayModal(id) {
   sourceCodeLink.innerHTML = 'See Source';
   buttonsDiv.append(projectLiveLink);
   buttonsDiv.append(sourceCodeLink);
-  modal.append(modalRightDiv)
+  modal.append(modalRightDiv);
   modal.append(buttonsDiv);
 }
 
@@ -273,6 +276,4 @@ for (let i = 0; i < projects.length; i += 1) {
   cardDiv.appendChild(imageDiv);
   cardDiv.appendChild(div);
   projectsSection.append(cardDiv);
-
 }
-
