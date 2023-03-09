@@ -3,16 +3,7 @@ const hamburger = document.getElementById('hamburger');
 const maincontent = document.getElementById('maincontent');
 const iconCancel = document.querySelector('#iconCancel');
 const menuLinks = document.querySelectorAll('.menu-anchor');
-const closeModalButton = document.getElementById('closeModal');
 const header = document.getElementsByClassName('header');
-let cardProjectTitle = document.getElementsByClassName('project-title');
-const project1Btn = document.getElementById('project1Btn')
-const project2Btn = document.getElementById('project2Btn')
-const project3Btn = document.getElementById('project3Btn')
-const project4Btn = document.getElementById('project4Btn')
-const htmlBtn = document.getElementsByClassName('html-btn')
-const cssBtn = document.getElementsByClassName('css-btn')
-const jsBtn = document.getElementsByClassName('js-btn')
 
 const projects = [
   {
@@ -26,7 +17,7 @@ const projects = [
     featuredImage: './images/SnapshootPortfolio.svg',
     technologies: [
       'html', 'css', 'javascript'
-    ], 
+    ],
   },
 
   {
@@ -34,7 +25,7 @@ const projects = [
     experience: {
       company: 'canopy',
       role: 'Back End Dev',
-      year: 2015
+      year: 2015,
     },
     description: 'A daily selection of privately personalized reads no accounts or sign-ups required.', 
     featuredImage: './images/SnapshootPortfolio1.svg',
@@ -48,7 +39,7 @@ const projects = [
     experience: {
       company: 'canopy',
       role: 'Back End Dev',
-      year: 2015
+      year: 2015,
     },
     description: 'A daily selection of privately personalized reads no accounts or sign-ups required.', 
     featuredImage: './images/SnapshootPortfolio2.svg',
@@ -62,7 +53,7 @@ const projects = [
     experience: {
       company: 'canopy',
       role: 'Back End Dev',
-      year: 2015
+      year: 2015,
     },
     description: 'A daily selection of privately personalized reads no accounts or sign-ups required.', 
     featuredImage: './images/SnapshootPortfolio3.svg',

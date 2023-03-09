@@ -22,6 +22,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 .wifi-net-battery {
@@ -621,7 +622,7 @@ textarea::placeholder {
     top: 0;
     left: 0;
     border: 1px solid #ebecf0;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -661,7 +662,6 @@ textarea::placeholder {
     gap: 1px;
     padding-left: 20px;
     width: 40%;
-
   }
 
   .modal .modal-right {
@@ -699,12 +699,7 @@ textarea::placeholder {
 
   .modal a.see-project-btn {
     width: 100%;
-    margin-top: 24px;
-    margin-left: 0;
     margin-bottom: 24px;
-  }
-
-  .modal a.see-project-btn {
     text-decoration: none;
     font-weight: 500;
     font-size: 1.1rem;
@@ -726,12 +721,7 @@ textarea::placeholder {
   transition: all 2s ease-in-out 0.4s;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 @media only screen and (min-width: 768px) {
-
   .header {
     padding-left: 155px;
   }
@@ -1054,7 +1044,7 @@ body {
     top: 0;
     left: 0;
     border: 1px solid #ebecf0;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 40px;
     display: flex;
     flex-direction: column;
@@ -1071,84 +1061,69 @@ body {
     padding: 24px;
   }
 
-.modal .project-title {
-  padding: 80px 0 20px 40px;
-}
+  .modal .project-title {
+    padding: 80px 0 20px 40px;
+  }
 
-.modal .description-and-links p {
-  width: 60%;
-}
+  .modal .description-and-links p {
+    width: 60%;
+  }
 
-.modal .project-links {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 0 20px 40px;
-}
+  .modal .project-links {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 20px 40px;
+  }
 
-.modal .my-skills {
-  display: flex;
-  flex-wrap: wrap;
-  width: 40%;
-  justify-content: flex-end;
+  .modal .my-skills {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    justify-content: flex-end;
+  }
 
-}
+  .modal .modal-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-end;
+    padding-right: 24px;
+  }
 
-.modal .modal-right {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: flex-end;
-  padding-right: 24px;
-}
+  .modal .description-and-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+  }
 
-.modal .description-and-links {
-  display: flex;
-  justify-content: space-between;
-  padding: 24px;
-}
+  .modal .btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+  }
 
-.modal .btns {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-}
+  .modal img.cancel-modal {
+    position: absolute;
+    top: 8%;
+    right: 5%;
+    z-index: 12;
+    width: 40px;
+    height: 40px;
+  }
 
-.modal img.cancel-modal {
-  position: absolute;
-  top: 8%;
-  right: 5%;
-  z-index: 12;
-  width: 40px;
-  height: 40px;
-}
+  .modal-blur {
+    filter: blur(15px);
+    z-index: -1;
+    background-color: #c1c7d0;
+  }
 
-.modal-blur {
-  filter: blur(15px);
-  z-index: -1;
-  background-color: #c1c7d0;
-}
-
-.modal .hr {
-  width: 40%;
-  margin: 12px 2px 4px 2px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.modal a.see-project-btn {
-  width: 120px;
-  margin-bottom: 24px;
-  text-decoration: none;
-  font-weight: 500;
-  color: #396df2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  background: #fff;
-  border: 1px solid #396df2;
-  padding: 8px;
-  border-radius: 0.8rem;
-}
+  .modal .hr {
+    width: 40%;
+    margin: 12px 2px 4px 2px;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .nav-links ul li {
