@@ -283,15 +283,14 @@ const emailInput = document.getElementById('youremail');
 
 form.addEventListener('submit', (e) => {
   const emailLowerCase = emailInput.value.trim().toLowerCase();
+   const errorDiv = document.createElement('div');
 
-  if (emailInput.value !== emailLowerCase){
+  if (emailInput.value !== emailLowerCase) {
     e.preventDefault();
-    const errorDiv = document.createElement('div');
     errorDiv.innerHTML = 'Please write your email in lower case';
     errorDiv.classList.add('error');
     form.append(errorDiv);
-  }
-  else {
+  } else {
     errorDiv.classList.remove('error');
     errorDiv.style.opacity = 0
   }
