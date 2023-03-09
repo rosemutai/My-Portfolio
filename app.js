@@ -99,6 +99,13 @@ const addBlurEffect = () => {
 // create project cards
 const projectsSection = document.getElementById('portfolio');
 
+// open and close modal
+const toggleDetailsModal = () => {
+  modal.classList.toggle('visible');
+  addBlurEffect();
+  displayModal(2);
+};
+
 // loop through the projects
 for (let i = 0; i < projects.length; i += 1) {
   // create card
@@ -178,11 +185,11 @@ for (let i = 0; i < projects.length; i += 1) {
   cardDiv.appendChild(div);
   projectsSection.append(cardDiv);
 
-};
+}
 // create Modal
 const modal = document.getElementById('details-modal');
 
-function displayModal (id) {
+function displayModal(id) {
   const project = projects[id];
   const modalTitle = document.createElement('h3');
   modalTitle.classList.add('project-title');
@@ -205,7 +212,6 @@ function displayModal (id) {
   modaljobHistoryList.appendChild(modaljobCompany);
   modaljobHistoryList.appendChild(modaljobRole);
   modaljobHistoryList.appendChild(modaljobYear);
-  
   modal.appendChild(modalTitle);
   modal.appendChild(modaljobHistoryList);
   const modalCloseIcon = document.createElement('img');
@@ -222,7 +228,7 @@ function displayModal (id) {
   const modalDiv = document.createElement('div');
   modalDiv.classList.add('description-and-links');
   const modalPTag = document.createElement('p');
-  modalPTag.classList.add('modal-description')
+  modalPTag.classList.add('modal-description');
   const modalRightDiv = document.createElement('div');
   modalRightDiv.classList.add('modal-right');
 
@@ -238,10 +244,7 @@ function displayModal (id) {
   modalcsssSkill.classList.add('css-btn');
   modaljsSkill.classList.add('skill-link');
   modaljsSkill.classList.add('js-btn');
-
-  modalhtmlSkill.innerHTML = project.technologies[0];
-  modalcsssSkill.innerHTML = project.technologies[1];
-  modaljsSkill.innerHTML = project.technologies[2];
+  [modalhtmlSkill.innerHTML, modalcsssSkill.innerHTML, modaljsSkill.innerHTML] = projects[i].technologies;
 
   modalSkillsList.appendChild(modalhtmlSkill);
   modalSkillsList.appendChild(modalcsssSkill);
@@ -252,7 +255,7 @@ function displayModal (id) {
   const hrDiv = document.createElement('div');
   hrDiv.classList.add('hr');
   const hr = document.createElement('hr');
-  hrDiv.appendChild(hr)
+  hrDiv.appendChild(hr);
   modal.appendChild(hrDiv);
 
   // buttons
@@ -270,10 +273,3 @@ function displayModal (id) {
   buttonsDiv.appendChild(sourceCodeLink);
   modal.append(buttonsDiv);
 }
-
-// open and close modal
-const toggleDetailsModal = () => {
-  modal.classList.toggle('visible');
-  addBlurEffect();
-  displayModal(2); 
-};
