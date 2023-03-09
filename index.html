@@ -8,12 +8,21 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="body-content" id="body">
+
+  <!-- start of modal -->
+  <div class="modal-section" id="modalSection">
+    <div class="modal" id="details-modal"></div>
+  </div>
+      
+  <!-- end of modal -->
+
+
   <header class="header">
       <div class="logo-section">
         <a href="/" class="logo">Rose</a>
       </div>
       <nav class="nav">
-        <div >
+        <div>
           <img class="bars"  id="hamburger" src="./images/hamburger.svg"
             alt="hamburger icon">
         </div>
@@ -31,7 +40,7 @@
   <main class="main-content" id="maincontent">
     <section class="hero-section">
       <div class="about-title-section">
-        <h1 class="about-title padding">I'm Rose Glad to see you!</h1>
+        <h1 class="about-title padding">I'm Rose <br>Glad to see you!</h1>
       </div>
       <div class="full-description">
         <p class="about-me padding">I’m a software developer! I can help you build a product , feature
@@ -62,125 +71,8 @@
     <section class="middle-section ">
       <section class="works" id="portfolio">
 
-        <!-- first card -->
-        <div class="card">
-          <div class="project-image first-column">
-            <img src="./images/SnapshootPortfolio.svg" alt="avocode project-image" srcset="">
-          </div>
-          <div class="second-column">
-            <h3 class="project-title">Tonic</h3>
-            <ul class="project-links">
-              <li class="canopy">CANOPY</li>
-              <li class="small-circle">.</li>
-              <li class="career-role">Back End Dev</li>
-              <li class="small-circle">.</li>
-              <li class="year">2015</li>
-            </ul>
-            <div class="project-description">
-              <p>A daily selection of privately personalized
-                reads; no accounts or sign-ups required.</p>
-            </div>
-            
-            <ul class="my-skills">
-              <li><a href="#" class="skill-link html-btn">html</a></li>
-              <li><a href="#" class="skill-link css-btn">css</a></li>
-              <li><a href="#" class="skill-link js-btn">javascript</a></li>
-            </ul>
-            
-            <a href="#" class="see-project-btn" id="view-project-btn">See Project</a>
-          </div>
-          
-        </div>
+        <!-- add projects dynamically -->
 
-        <!-- second card -->
-        <div class="card">
-          <div class="second-column">
-            <h3 class="project-title">Tonic</h3>
-            <ul class="project-links">
-              <li class="canopy">CANOPY</li>
-              <li class="small-circle">.</li>
-              <li class="career-role">Back End Dev</li>
-              <li class="small-circle">.</li>
-              <li class="year">2015</li>
-            </ul>
-            <div class="project-description">
-              <p>A daily selection of privately personalized
-                reads; no accounts or sign-ups required.</p>
-            </div>
-          
-            <ul class="my-skills">
-              <li><a href="#" class="skill-link html-btn">html</a></li>
-              <li><a href="#" class="skill-link css-btn">css</a></li>
-              <li><a href="#" class="skill-link js-btn">javascript</a></li>
-            </ul>
-          
-            <a href="#" class="see-project-btn">See Project</a>
-          </div>
-          <div class="project-image first-column">
-            <img src="./images/SnapshootPortfolio1.svg" alt="avocode project-image" srcset="">
-          </div>
-        
-        </div>
-
-        <!-- third card -->
-        <div class="card">
-          <div class="project-image first-column">
-            <img src="./images/SnapshootPortfolio2.svg" alt="avocode project-image" srcset="">
-          </div>
-          <div class="second-column">
-            <h3 class="project-title">Tonic</h3>
-            <ul class="project-links">
-              <li class="canopy">CANOPY</li>
-              <li class="small-circle">.</li>
-              <li class="career-role">Back End Dev</li>
-              <li class="small-circle">.</li>
-              <li class="year">2015</li>
-            </ul>
-            <div class="project-description">
-              <p>A daily selection of privately personalized
-                reads; no accounts or sign-ups required.</p>
-            </div>
-        
-            <ul class="my-skills">
-              <li><a href="#" class="skill-link html-btn">html</a></li>
-              <li><a href="#" class="skill-link css-btn">css</a></li>
-              <li><a href="#" class="skill-link js-btn">javascript</a></li>
-            </ul>
-        
-            <a href="#" class="see-project-btn">See Project</a>
-          </div>
-        
-        </div>
-
-        <!-- fourth card -->
-        <div class="card">
-          <div class="second-column">
-            <h3 class="project-title">Tonic</h3>
-            <ul class="project-links">
-              <li class="canopy">CANOPY</li>
-              <li class="small-circle">.</li>
-              <li class="career-role">Back End Dev</li>
-              <li class="small-circle">.</li>
-              <li class="year">2015</li>
-            </ul>
-            <div class="project-description">
-              <p>A daily selection of privately personalized
-                reads; no accounts or sign-ups required.</p>
-            </div>
-        
-            <ul class="my-skills">
-              <li><a href="#" class="skill-link html-btn">html</a></li>
-              <li><a href="#" class="skill-link css-btn">css</a></li>
-              <li><a href="#" class="skill-link js-btn">javascript</a></li>
-            </ul>
-        
-            <a href="#" class="see-project-btn">See Project</a>
-          </div>
-          <div class="project-image first-column">
-            <img src="./images/SnapshootPortfolio3.svg" alt="avocode project-image" srcset="">
-          </div>
-        
-        </div>
       </section>
       
       <section class="rose-full-details" id="aboutme">
