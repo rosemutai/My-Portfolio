@@ -186,4 +186,90 @@ for (let i = 0; i < projects.length; i += 1) {
   projectsSection.append(cardDiv);
 
 }
+// create Modal
+const modal = document.getElementById('details-modal');
 
+function displayModal(id) {
+  const project = projects[id];
+  const modalTitle = document.createElement('h3');
+  modalTitle.classList.add('project-title');
+  modalTitle.innerHTML = project.name;
+
+  // project ul job experience
+  const modaljobHistoryList = document.createElement('ul');
+  const modaljobCompany = document.createElement('li');
+  const modaljobRole = document.createElement('li');
+  const modaljobYear = document.createElement('li');
+  modaljobHistoryList.classList.add('project-links');
+  modaljobCompany.classList.add('canopy');
+  modaljobRole.classList.add('canopy');
+  modaljobYear.classList.add('year');
+
+  modaljobCompany.innerHTML = project.experience.company;
+  modaljobRole.innerHTML = project.experience.role;
+  modaljobYear.innerHTML = project.experience.year;
+
+  modaljobHistoryList.appendChild(modaljobCompany);
+  modaljobHistoryList.appendChild(modaljobRole);
+  modaljobHistoryList.appendChild(modaljobYear);
+  modal.appendChild(modalTitle);
+  modal.appendChild(modaljobHistoryList);
+  const modalCloseIcon = document.createElement('img');
+  modalCloseIcon.classList.add('cancel-modal');
+  modalCloseIcon.src = './images/IconTimes.svg';
+  modalCloseIcon.addEventListener('click', toggleDetailsModal);
+  const modalProjectImage = document.createElement('img');
+  modalProjectImage.classList.add('modalImage');
+  modalProjectImage.src = project.featuredImage;
+  modal.appendChild(modalCloseIcon);
+  modal.appendChild(modalProjectImage);
+
+  // modal project description
+  const modalDiv = document.createElement('div');
+  modalDiv.classList.add('description-and-links');
+  const modalPTag = document.createElement('p');
+  modalPTag.classList.add('modal-description');
+  const modalRightDiv = document.createElement('div');
+  modalRightDiv.classList.add('modal-right');
+
+  // modal skills
+  const modalSkillsList = document.createElement('ul');
+  const modalhtmlSkill = document.createElement('li');
+  const modalcsssSkill = document.createElement('li');
+  const modaljsSkill = document.createElement('li');
+  modalSkillsList.classList.add('my-skills');
+  modalhtmlSkill.classList.add('skill-link');
+  modalhtmlSkill.classList.add('html-btn');
+  modalcsssSkill.classList.add('skill-link');
+  modalcsssSkill.classList.add('css-btn');
+  modaljsSkill.classList.add('skill-link');
+  modaljsSkill.classList.add('js-btn');
+  [modalhtmlSkill.innerHTML, modalcsssSkill.innerHTML, modaljsSkill.innerHTML] = projects[i].technologies;
+
+  modalSkillsList.appendChild(modalhtmlSkill);
+  modalSkillsList.appendChild(modalcsssSkill);
+  modalSkillsList.appendChild(modaljsSkill);
+
+  modal.appendChild(modalSkillsList);
+
+  const hrDiv = document.createElement('div');
+  hrDiv.classList.add('hr');
+  const hr = document.createElement('hr');
+  hrDiv.appendChild(hr);
+  modal.appendChild(hrDiv);
+
+  // buttons
+  const buttonsDiv = document.createElement('div');
+  buttonsDiv.classList.add('btns');
+  const projectLiveLink = document.createElement('a');
+  const sourceCodeLink = document.createElement('a');
+  projectLiveLink.href = '';
+  sourceCodeLink.href = '';
+  projectLiveLink.classList.add('see-project-btn');
+  sourceCodeLink.classList.add('see-project-btn');
+  projectLiveLink.innerHTML = 'See Live';
+  sourceCodeLink.innerHTML = 'See Source';
+  buttonsDiv.appendChild(projectLiveLink);
+  buttonsDiv.appendChild(sourceCodeLink);
+  modal.append(buttonsDiv);
+}
