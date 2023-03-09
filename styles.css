@@ -614,13 +614,25 @@ textarea::placeholder {
     height: 20%;
   }
 
+  .modal-section {
+    width: 90%;
+    height: 80%;
+    position: fixed;
+    z-index: 10;
+    margin: 12px auto;
+    display: flex;
+    justify-content: center;
+      align-items: center;
+  }
+
   .visible {
     width: 96%;
-    height: 100vh;
+    height: 90vh;
     margin: 8px;
     position: absolute;
     top: 0;
     left: 0;
+    margin-top: 12px;
     border: 1px solid #ebecf0;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 20px;
@@ -629,7 +641,7 @@ textarea::placeholder {
     justify-content: flex-start;
     background-color: #fff;
     z-index: 20;
-    overflow: auto;
+    object-fit: contain;
   }
 
   .modal img {
@@ -783,6 +795,7 @@ textarea::placeholder {
   }
 
   .card {
+    position: relative;
     width: 80%;
     height: 80%;
     flex-direction: row;
@@ -1036,33 +1049,34 @@ textarea::placeholder {
     height: 20%;
   }
 
-  .visible {
-    width: 80%;
-    height: 100vh;
-    margin: 10% 10% 0 10%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 1px solid #ebecf0;
-    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    z-index: 100;
-    overflow: auto;
+  .modal-section {
+    height: 100%;
+    padding: 0 10%;
   }
 
+.visible {
+  width: 80%;
+  height: 100vh;
+  margin: 10% auto;
+  position: fixed;
+  border: 1px solid #ebecf0;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  z-index: 100;
+}
+
   .modal img.modalImage {
-    width: 98%;
-    height: 70%;
+    width: 100%;
     object-fit: contain;
     margin: 0 auto;
     padding: 24px;
   }
 
   .modal .project-title {
-    padding: 80px 0 20px 40px;
+    padding: 10px 0 20px 40px;
   }
 
   .modal .description-and-links p {
@@ -1078,7 +1092,7 @@ textarea::placeholder {
   .modal .my-skills {
     display: flex;
     flex-wrap: wrap;
-    width: 40%;
+    width: 100%;
     justify-content: flex-end;
   }
 
@@ -1124,6 +1138,7 @@ textarea::placeholder {
     display: flex;
     justify-content: flex-end;
   }
+
 }
 
 .nav-links ul li {
