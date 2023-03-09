@@ -277,3 +277,26 @@ for (let i = 0; i < projects.length; i += 1) {
   cardDiv.appendChild(div);
   projectsSection.append(cardDiv);
 }
+
+
+const form = document.querySelector('form');
+const emailInput = document.getElementById('youremail');
+const submitBtn = document.getElementById('getintouchBtn')
+
+form.addEventListener('submit', (e) => {
+  const emailLowerCase = emailInput.value.trim().toLowerCase();
+
+  if (emailInput.value !== emailLowerCase){
+    e.preventDefault();
+    const errorDiv = document.createElement('div');
+    errorDiv.innerHTML = "Please write your email in lower case"
+    errorDiv.classList.add('error');
+    form.append(errorDiv)
+  }
+  else {
+    errorDiv.classList.remove('error');
+    errorDiv.style.opacity = 0
+  }
+})
+
+
