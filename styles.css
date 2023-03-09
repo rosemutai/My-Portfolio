@@ -434,6 +434,18 @@ textarea::placeholder {
   color: #b3bac5;
 }
 
+.error {
+  width: 327px;
+  height: 48px;
+  padding: 4px;
+  background-color: red;
+  border: transparent;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto 12px auto;
+  border-radius: 8px;
+}
+
 .contact-form textarea {
   padding: 0.6rem;
   width: 327px;
@@ -1005,6 +1017,7 @@ textarea::placeholder {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    padding-bottom: 12px;
   }
 
   button.submit-btn {
