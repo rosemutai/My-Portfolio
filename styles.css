@@ -614,17 +614,6 @@ textarea::placeholder {
     height: 20%;
   }
 
-  .modal-section {
-    width: 90%;
-    height: 80%;
-    position: fixed;
-    z-index: 10;
-    margin: 12px auto;
-    display: flex;
-    justify-content: center;
-      align-items: center;
-  }
-
   .visible {
     width: 96%;
     height: 90vh;
@@ -1049,29 +1038,25 @@ textarea::placeholder {
     height: 20%;
   }
 
-  .modal-section {
-    height: 100%;
-    padding: 0 10%;
+  .visible {
+    width: 80%;
+    height: 100vh;
+    margin: 12px auto 12px 10%;
+    position: fixed;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    z-index: 100;
   }
 
-.visible {
-  width: 80%;
-  height: 100vh;
-  margin: 10% auto;
-  position: fixed;
-  border: 1px solid #ebecf0;
-  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-  border-radius: 40px;
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  z-index: 100;
-}
-
   .modal img.modalImage {
-    width: 100%;
+    height: 50vw;
     object-fit: contain;
     margin: 0 auto;
+    background: #000;
     padding: 24px;
   }
 
@@ -1103,6 +1088,7 @@ textarea::placeholder {
     align-items: end;
     justify-content: flex-end;
     padding-right: 24px;
+    background-color: yellow;
   }
 
   .modal .description-and-links {
@@ -1138,7 +1124,6 @@ textarea::placeholder {
     display: flex;
     justify-content: flex-end;
   }
-
 }
 
 .nav-links ul li {
