@@ -129,7 +129,10 @@ function displayModal(id) {
   const modalCloseIcon = document.createElement('img');
   modalCloseIcon.classList.add('cancel-modal');
   modalCloseIcon.src = './images/IconTimes.svg';
-  modalCloseIcon.addEventListener('click', toggleDetailsModal);
+  modalCloseIcon.addEventListener('click', () => {
+    modal.classList.toggle('visible');
+    addBlurEffect();
+  });
   const modalProjectImage = document.createElement('img');
   modalProjectImage.classList.add('modalImage');
   modalProjectImage.src = project.featuredImage;
@@ -158,7 +161,7 @@ function displayModal(id) {
   modaljsSkill.classList.add('js-btn');
   [
     modalhtmlSkill.innerHTML,
-    modalcsssSkill.innerHTML, 
+    modalcsssSkill.innerHTML,
     modaljsSkill.innerHTML,
   ] = projects[id].technologies;
 
