@@ -4,6 +4,7 @@ const maincontent = document.getElementById('maincontent');
 const iconCancel = document.querySelector('#iconCancel');
 const menuLinks = document.querySelectorAll('.menu-anchor');
 const header = document.getElementsByClassName('header');
+const modal = document.getElementById('details-modal');
 
 const projects = [
   {
@@ -184,11 +185,9 @@ for (let i = 0; i < projects.length; i += 1) {
   cardDiv.appendChild(imageDiv);
   cardDiv.appendChild(div);
   projectsSection.append(cardDiv);
-
 }
-// create Modal
-const modal = document.getElementById('details-modal');
 
+// create Modal
 function displayModal(id) {
   const project = projects[id];
   const modalTitle = document.createElement('h3');
@@ -244,7 +243,11 @@ function displayModal(id) {
   modalcsssSkill.classList.add('css-btn');
   modaljsSkill.classList.add('skill-link');
   modaljsSkill.classList.add('js-btn');
-  [modalhtmlSkill.innerHTML, modalcsssSkill.innerHTML, modaljsSkill.innerHTML] = projects[i].technologies;
+  [
+    modalhtmlSkill.innerHTML, 
+    modalcsssSkill.innerHTML, 
+    modaljsSkill.innerHTML,
+   ] = projects[i].technologies;
 
   modalSkillsList.appendChild(modalhtmlSkill);
   modalSkillsList.appendChild(modalcsssSkill);
