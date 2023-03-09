@@ -283,7 +283,7 @@ const emailInput = document.getElementById('youremail');
 
 form.addEventListener('submit', (e) => {
   const emailLowerCase = emailInput.value.trim().toLowerCase();
-   const errorDiv = document.createElement('div');
+  const errorDiv = document.createElement('div');
 
   if (emailInput.value !== emailLowerCase) {
     e.preventDefault();
@@ -292,6 +292,6 @@ form.addEventListener('submit', (e) => {
     form.append(errorDiv);
   } else {
     errorDiv.classList.remove('error');
-    errorDiv.style.opacity = 0
+    errorDiv.style.opacity = 0;
   }
 });
