@@ -111,9 +111,9 @@ const toggleDetailsModal = () => {
   console.log("Hey")
   modal.classList.toggle('visible');
   addBlurEffect();
+  displayModal(2);
+  
 }
-
-// closeModalButton.addEventListener('click', toggleDetailsModal)
 
 // create project cards
 const projectsSection = document.getElementById('portfolio');
@@ -121,10 +121,7 @@ const projectsSection = document.getElementById('portfolio');
 // loop through the projects
 for (let i = 0; i < projects.length; i += 1) {
   console.log(i)
-  // card
-  for(let cardIndex = 0; cardIndex < 4; cardIndex += 1) {
-    console.log(cardIndex)
-
+  
   // create card
   let cardDiv = document.createElement('div');
   cardDiv.classList.add('card')
@@ -210,18 +207,22 @@ for (let i = 0; i < projects.length; i += 1) {
   cardDiv.appendChild(imageDiv);
   cardDiv.appendChild(div);
   projectsSection.append(cardDiv);
-  }
+  // }
 
 };
 
 // create Modal
 const modal = document.getElementById('details-modal');
 
+function displayModal (id) {
+
+  const project = projects[id]
+
   const modalTitle = document.createElement('h3')
   modalTitle.classList.add('project-title');
-  modalTitle.innerHTML = projects[projectId].name
+  modalTitle.innerHTML = project.name
 
-  // project ul job experience
+   // project ul job experience
   let modaljobHistoryList = document.createElement('ul');
   let modaljobCompany = document.createElement('li');
   let modaljobRole = document.createElement('li');
@@ -230,6 +231,10 @@ const modal = document.getElementById('details-modal');
   modaljobCompany.classList.add('canopy');
   modaljobRole.classList.add('canopy');
   modaljobYear.classList.add('year');
+
+  modaljobCompany.innerHTML = project.experience.company;
+  modaljobRole.innerHTML = project.experience.role;
+  modaljobYear.innerHTML = project.experience.year;
 
   modaljobHistoryList.appendChild(modaljobCompany);
   modaljobHistoryList.appendChild(modaljobRole);
@@ -241,8 +246,10 @@ const modal = document.getElementById('details-modal');
   let modalCloseIcon = document.createElement('img');
   modalCloseIcon.classList.add('cancel-modal');
   modalCloseIcon.src = './images/IconTimes.svg';
+  modalCloseIcon.addEventListener('click', toggleDetailsModal)
   let modalProjectImage = document.createElement('img');
   modalProjectImage.classList.add('modalImage');
+  modalProjectImage.src = project.featuredImage;
 
   modal.appendChild(modalCloseIcon);
   modal.appendChild(modalProjectImage);
@@ -267,6 +274,10 @@ const modal = document.getElementById('details-modal');
   modalcsssSkill.classList.add('css-btn');
   modaljsSkill.classList.add('skill-link');
   modaljsSkill.classList.add('js-btn');
+
+  modalhtmlSkill.innerHTML = project.technologies[0]
+  modalcsssSkill.innerHTML = project.technologies[1]
+  modaljsSkill.innerHTML = project.technologies[2]
 
   modalSkillsList.appendChild(modalhtmlSkill);
   modalSkillsList.appendChild(modalcsssSkill);
@@ -295,7 +306,4 @@ const modal = document.getElementById('details-modal');
   buttonsDiv.appendChild(sourceCodeLink);
   modal.append(buttonsDiv)
 
-const modalSection = document.getElementsByClassName('modal-section')
-modalSection[0].append(modal)
-
-
+}
