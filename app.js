@@ -11,12 +11,12 @@ const projects = [
     experience: {
       company: 'canopy',
       role: 'Back End Dev',
-      year: 2015
+      year: 2015,
     },
-    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.', 
+    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
     featuredImage: './images/SnapshootPortfolio.svg',
     technologies: [
-      'html', 'css', 'javascript'
+      'html', 'css', 'javascript',
     ],
   },
 
@@ -27,11 +27,11 @@ const projects = [
       role: 'Back End Dev',
       year: 2015,
     },
-    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.', 
+    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
     featuredImage: './images/SnapshootPortfolio1.svg',
     technologies: [
-      'html', 'css', 'javascript'
-    ], 
+      'html', 'css', 'javascript',
+    ],
   },
 
   {
@@ -41,11 +41,11 @@ const projects = [
       role: 'Back End Dev',
       year: 2015,
     },
-    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.', 
+    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
     featuredImage: './images/SnapshootPortfolio2.svg',
     technologies: [
-      'html', 'css', 'javascript'
-    ], 
+      'html', 'css', 'javascript',
+    ],
   },
 
   {
@@ -55,13 +55,13 @@ const projects = [
       role: 'Back End Dev',
       year: 2015,
     },
-    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.', 
+    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
     featuredImage: './images/SnapshootPortfolio3.svg',
     technologies: [
-      'html', 'css', 'javascript'
-    ], 
+      'html', 'css', 'javascript',
+    ],
   },
-]
+];
 
 // open mobile menu
 hamburger.addEventListener('click', (() => {
@@ -77,7 +77,6 @@ iconCancel.addEventListener('click', (() => {
   hamburger.style.position = 'absolute';
   maincontent.classList.remove('blur');
 }));
-
 
 // mobile menu links on click
 for (let i = 0; i < menuLinks.length; i += 1) {
@@ -95,16 +94,7 @@ for (let i = 0; i < menuLinks.length; i += 1) {
 const addBlurEffect = () => {
   maincontent.classList.toggle('modal-blur');
   header[0].classList.toggle('modal-blur');
-}
-
-// open and close modal
-const toggleDetailsModal = () => {
-  console.log("Hey")
-  modal.classList.toggle('visible');
-  addBlurEffect();
-  displayModal(2);
-  
-}
+};
 
 // create project cards
 const projectsSection = document.getElementById('portfolio');
@@ -295,6 +285,13 @@ function displayModal (id) {
   sourceCodeLink.innerHTML = 'See Source';
   buttonsDiv.appendChild(projectLiveLink);
   buttonsDiv.appendChild(sourceCodeLink);
-  modal.append(buttonsDiv)
+  modal.append(buttonsDiv);
 
 }
+
+// open and close modal
+const toggleDetailsModal = () => {
+  modal.classList.toggle('visible');
+  addBlurEffect();
+  displayModal(2); 
+};
