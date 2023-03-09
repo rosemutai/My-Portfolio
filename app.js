@@ -296,25 +296,22 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-const nameInput = form.elements.name;
-const email = form.elements.email;
-const messageInput = form.elements.message;
+const {name: nameInput, email,  message: messageInput}= form.elements;
 
 form.addEventListener('input', () => {
   const userData = {
     name: nameInput.value,
     email: email.value,
     message: messageInput.value,
-  }
+  };
 
   // store data in local storage
   const userDataString = JSON.stringify(userData);
-  localStorage.setItem('user', userDataString)
-})
+  localStorage.setItem('user', userDataString);
+});
 
 // get data from local storage
 const userDataFromLocalStorage = JSON.parse(localStorage.getItem('user')) || {};
 nameInput.value = userDataFromLocalStorage.name || '';
 email.value = userDataFromLocalStorage.email || '';
 messageInput.value = userDataFromLocalStorage.message || '';
-
