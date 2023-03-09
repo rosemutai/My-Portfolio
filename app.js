@@ -135,8 +135,6 @@ for (let i = 0; i < projects.length; i += 1) {
   jobCompany.innerHTML = projects[i].experience.company;
   jobRole.innerHTML = projects[i].experience.role;
   jobYear.innerHTML = projects[i].experience.year;
-  
-
   const cardProjectDescription = document.createElement('div');
   cardProjectDescription.classList.add('project-description');
   const pTag = document.createElement('p');
@@ -161,8 +159,7 @@ for (let i = 0; i < projects.length; i += 1) {
   csssSkill.classList.add('css-btn');
   jsSkill.classList.add('skill-link');
   jsSkill.classList.add('js-btn');
-  [htmlSkill.innerHTML, csssSkill.innerHTML, jsSkill.innerHTML] = projects[i].technologies
-
+  [htmlSkill.innerHTML, csssSkill.innerHTML, jsSkill.innerHTML] = projects[i].technologies;
   mySkillsList.appendChild(htmlSkill);
   mySkillsList.appendChild(csssSkill);
   mySkillsList.appendChild(jsSkill);
@@ -180,16 +177,13 @@ for (let i = 0; i < projects.length; i += 1) {
   cardDiv.appendChild(imageDiv);
   cardDiv.appendChild(div);
   projectsSection.append(cardDiv);
-  // }
 
 };
-
 // create Modal
 const modal = document.getElementById('details-modal');
 
 function displayModal (id) {
-  const project = projects[id]
-
+  const project = projects[id];
   const modalTitle = document.createElement('h3');
   modalTitle.classList.add('project-title');
   modalTitle.innerHTML = project.name;
@@ -275,7 +269,6 @@ function displayModal (id) {
   buttonsDiv.appendChild(projectLiveLink);
   buttonsDiv.appendChild(sourceCodeLink);
   modal.append(buttonsDiv);
-
 }
 
 // open and close modal
