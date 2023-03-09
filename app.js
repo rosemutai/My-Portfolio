@@ -116,12 +116,12 @@ for (let i = 0; i < projects.length; i += 1) {
 
   // second column
   const div = document.createElement('div');
-  div.classList.add('second-column')
+  div.classList.add('second-column');
   // card project title
   const projectTitle = document.createElement('h3');
-  projectTitle.classList.add('project-title')
-  projectTitle.innerText = projects[i].name
-  div.appendChild(projectTitle)
+  projectTitle.classList.add('project-title');
+  projectTitle.innerText = projects[i].name;
+  div.appendChild(projectTitle);
 
   // project ul job experience
   const jobHistoryList = document.createElement('ul');
@@ -132,25 +132,24 @@ for (let i = 0; i < projects.length; i += 1) {
   jobCompany.classList.add('canopy');
   jobRole.classList.add('canopy');
   jobYear.classList.add('year');
-  for (let job in projects[i].experience) {
-    jobCompany.innerHTML = projects[i].experience.company;
-    jobRole.innerHTML = projects[i].experience.role;
-    jobYear.innerHTML = projects[i].experience.year;
-  }
+  jobCompany.innerHTML = projects[i].experience.company;
+  jobRole.innerHTML = projects[i].experience.role;
+  jobYear.innerHTML = projects[i].experience.year;
+  
 
   const cardProjectDescription = document.createElement('div');
   cardProjectDescription.classList.add('project-description');
   const pTag = document.createElement('p');
-  cardProjectDescription.appendChild(pTag)
-  pTag.innerHTML = projects[i].description
-  div.appendChild(cardProjectDescription)
+  cardProjectDescription.appendChild(pTag);
+  pTag.innerHTML = projects[i].description;
+  div.appendChild(cardProjectDescription);
 
   jobHistoryList.appendChild(jobCompany);
   jobHistoryList.appendChild(jobRole);
   jobHistoryList.appendChild(jobYear);
   div.appendChild(jobHistoryList);
 
-    // my skills
+  // my skills
   const mySkillsList = document.createElement('ul');
   const htmlSkill = document.createElement('li');
   const csssSkill = document.createElement('li');
@@ -159,12 +158,10 @@ for (let i = 0; i < projects.length; i += 1) {
   htmlSkill.classList.add('skill-link');
   htmlSkill.classList.add('html-btn');
   csssSkill.classList.add('skill-link');
-  csssSkill.classList.add('css-btn')
+  csssSkill.classList.add('css-btn');
   jsSkill.classList.add('skill-link');
-  jsSkill.classList.add('js-btn');  
-  htmlSkill.innerHTML = projects[i].technologies[0];
-  csssSkill.innerHTML = projects[i].technologies[1];
-  jsSkill.innerHTML = projects[i].technologies[2];
+  jsSkill.classList.add('js-btn');
+  [htmlSkill.innerHTML, csssSkill.innerHTML, jsSkill.innerHTML] = projects[i].technologies
 
   mySkillsList.appendChild(htmlSkill);
   mySkillsList.appendChild(csssSkill);
@@ -172,13 +169,13 @@ for (let i = 0; i < projects.length; i += 1) {
   div.appendChild(mySkillsList);
 
   // see project button
-  let seeProjectBtn = document.createElement('button');
+  const seeProjectBtn = document.createElement('button');
   seeProjectBtn.classList.add('see-project-btn');
   seeProjectBtn.classList.add('open-modal-btn');
   seeProjectBtn.innerHTML = 'See Project';
   div.appendChild(seeProjectBtn);
 
-  seeProjectBtn.addEventListener('click', toggleDetailsModal)
+  seeProjectBtn.addEventListener('click', toggleDetailsModal);
 
   cardDiv.appendChild(imageDiv);
   cardDiv.appendChild(div);
@@ -193,15 +190,15 @@ const modal = document.getElementById('details-modal');
 function displayModal (id) {
   const project = projects[id]
 
-  const modalTitle = document.createElement('h3')
+  const modalTitle = document.createElement('h3');
   modalTitle.classList.add('project-title');
-  modalTitle.innerHTML = project.name
+  modalTitle.innerHTML = project.name;
 
-   // project ul job experience
-  let modaljobHistoryList = document.createElement('ul');
-  let modaljobCompany = document.createElement('li');
-  let modaljobRole = document.createElement('li');
-  let modaljobYear = document.createElement('li');
+  // project ul job experience
+  const modaljobHistoryList = document.createElement('ul');
+  const modaljobCompany = document.createElement('li');
+  const modaljobRole = document.createElement('li');
+  const modaljobYear = document.createElement('li');
   modaljobHistoryList.classList.add('project-links');
   modaljobCompany.classList.add('canopy');
   modaljobRole.classList.add('canopy');
@@ -217,31 +214,29 @@ function displayModal (id) {
   
   modal.appendChild(modalTitle);
   modal.appendChild(modaljobHistoryList);
-
-  let modalCloseIcon = document.createElement('img');
+  const modalCloseIcon = document.createElement('img');
   modalCloseIcon.classList.add('cancel-modal');
   modalCloseIcon.src = './images/IconTimes.svg';
-  modalCloseIcon.addEventListener('click', toggleDetailsModal)
-  let modalProjectImage = document.createElement('img');
+  modalCloseIcon.addEventListener('click', toggleDetailsModal);
+  const modalProjectImage = document.createElement('img');
   modalProjectImage.classList.add('modalImage');
   modalProjectImage.src = project.featuredImage;
-
   modal.appendChild(modalCloseIcon);
   modal.appendChild(modalProjectImage);
 
   // modal project description
-  let modalDiv = document.createElement('div');
+  const modalDiv = document.createElement('div');
   modalDiv.classList.add('description-and-links');
-  let modalPTag = document.createElement('p');
+  const modalPTag = document.createElement('p');
   modalPTag.classList.add('modal-description')
-  let modalRightDiv = document.createElement('div');
+  const modalRightDiv = document.createElement('div');
   modalRightDiv.classList.add('modal-right');
 
   // modal skills
-  let modalSkillsList = document.createElement('ul');
-  let modalhtmlSkill = document.createElement('li');
-  let modalcsssSkill = document.createElement('li');
-  let modaljsSkill = document.createElement('li');
+  const modalSkillsList = document.createElement('ul');
+  const modalhtmlSkill = document.createElement('li');
+  const modalcsssSkill = document.createElement('li');
+  const modaljsSkill = document.createElement('li');
   modalSkillsList.classList.add('my-skills');
   modalhtmlSkill.classList.add('skill-link');
   modalhtmlSkill.classList.add('html-btn');
@@ -250,9 +245,9 @@ function displayModal (id) {
   modaljsSkill.classList.add('skill-link');
   modaljsSkill.classList.add('js-btn');
 
-  modalhtmlSkill.innerHTML = project.technologies[0]
-  modalcsssSkill.innerHTML = project.technologies[1]
-  modaljsSkill.innerHTML = project.technologies[2]
+  modalhtmlSkill.innerHTML = project.technologies[0];
+  modalcsssSkill.innerHTML = project.technologies[1];
+  modaljsSkill.innerHTML = project.technologies[2];
 
   modalSkillsList.appendChild(modalhtmlSkill);
   modalSkillsList.appendChild(modalcsssSkill);
@@ -260,17 +255,17 @@ function displayModal (id) {
 
   modal.appendChild(modalSkillsList);
 
-  let hrDiv = document.createElement('div');
+  const hrDiv = document.createElement('div');
   hrDiv.classList.add('hr');
-  let hr = document.createElement('hr');
+  const hr = document.createElement('hr');
   hrDiv.appendChild(hr)
   modal.appendChild(hrDiv);
 
   // buttons
-  let buttonsDiv = document.createElement('div');
+  const buttonsDiv = document.createElement('div');
   buttonsDiv.classList.add('btns');
-  let projectLiveLink = document.createElement('a');
-  let sourceCodeLink = document.createElement('a');
+  const projectLiveLink = document.createElement('a');
+  const sourceCodeLink = document.createElement('a');
   projectLiveLink.href = '';
   sourceCodeLink.href = '';
   projectLiveLink.classList.add('see-project-btn');
