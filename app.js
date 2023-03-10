@@ -299,14 +299,14 @@ form.addEventListener('submit', (e) => {
 const { name: nameInput, email, message: messageInput } = form.elements;
 
 form.addEventListener('input', () => {
-  const userData = {
+  const user = {
     name: nameInput.value,
     email: email.value,
     message: messageInput.value,
   };
 
   // store data in local storage
-  const userDataString = JSON.stringify(userData);
+  const userDataString = JSON.stringify(user);
   localStorage.setItem('user', userDataString);
 });
 
