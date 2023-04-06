@@ -7,14 +7,14 @@ const header = document.getElementsByClassName('header');
 const modal = document.getElementById('details-modal');
 const projects = [
   {
-    name: 'Tonic',
+    name: 'To-Do-List',
     experience: {
-      company: 'canopy',
-      role: 'Back End Dev',
-      year: 2015,
+      company: 'Microverse',
+      role: 'Front End Dev',
+      year: 2023,
     },
-    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
-    featuredImage: './images/SnapshootPortfolio.svg',
+    description: 'Add and remove your daily list of todo tasks here.',
+    featuredImage: './images/todo.png',
     technologies: [
       'html', 'css', 'javascript',
     ],
