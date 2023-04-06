@@ -172,7 +172,7 @@ button:disabled {
   height: 100%;
 }
 
-.card h3 {
+h3.card-title {
   color: #172b4d;
   font-style: normal;
   font-weight: 700;
@@ -181,6 +181,7 @@ button:disabled {
 }
 
 .canopy {
+  list-style-type: none;
   font-style: normal;
   font-weight: 600;
   font-size: 0.8rem;
@@ -227,8 +228,9 @@ button:disabled {
   width: 100%;
 }
 
-ul.project-links {
-  list-style: none;
+ul.project-links,
+ul.experience {
+  list-style: disk;
   display: flex;
   align-items: center;
   padding-top: 1.25rem;
@@ -250,6 +252,9 @@ ul.project-links {
   font-size: 0.8rem;
   line-height: 1rem;
   color: #7a869a;
+  list-style-type: disc;
+  margin-left: 8px;
+  list-style-position: inside;
 }
 
 .project-description p {
@@ -626,7 +631,17 @@ textarea::placeholder {
     height: 20%;
   }
 
-  .visible {
+  #modal-backdrop {
+    position: fixed;
+    background-color: red;
+    width: 80%;
+    margin: 4px auto;
+    filter: blur(5px);
+    top: 0;
+    left: 0;
+  }
+
+  .modal .visible {
     width: 96%;
     height: 90vh;
     margin: 8px;
@@ -643,6 +658,7 @@ textarea::placeholder {
     background-color: #fff;
     z-index: 20;
     object-fit: contain;
+    overflow-y: scroll;
   }
 
   .modal img {
@@ -840,9 +856,10 @@ textarea::placeholder {
   }
 
   .project-description p {
-    width: 58%;
+    padding-right: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+
   }
 
   .project-image img {
@@ -1052,10 +1069,12 @@ textarea::placeholder {
   }
 
   .visible {
-    width: 80%;
-    height: 100vh;
-    margin: 12px auto 12px 10%;
-    position: fixed;
+    width: 70%;
+    margin: 12px 20% 12px 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: inherit;
     border: 1px solid #ebecf0;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 40px;
@@ -1063,10 +1082,11 @@ textarea::placeholder {
     flex-direction: column;
     background-color: #fff;
     z-index: 100;
+    background-color: blue;
   }
 
   .modal img.modalImage {
-    height: 50vw;
+    height: 40%;
     object-fit: contain;
     margin: 0 auto;
     background: #000;
